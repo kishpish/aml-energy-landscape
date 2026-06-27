@@ -1,0 +1,39 @@
+[r2] loading scVI + HVG AnnData…
+[34mINFO    [0m File [35m./models/scvi/van_galen_d30/[0m[95mmodel.pt[0m  
+         already downloaded                                                     
+[r2] benchmark states (≥400 real): ['A0_L1_2', 'A1_L1_1', 'A1_L1_0', 'A1_L1_5', 'A0_L1_6', 'A1_L1_4', 'A1_L1_3', 'A0_L1_11']
+[r2] A0_L1_2 done
+[r2] A1_L1_1 done
+[r2] A1_L1_0 done
+[r2] A1_L1_5 done
+[r2] A0_L1_6 done
+[r2] A1_L1_4 done
+[r2] A1_L1_3 done
+[r2] A0_L1_11 done
+
+[r2]   AUGMENTATION BENCHMARK  
+{
+  "n_states": 8,
+  "reps_per_cell": 12,
+  "n10": {
+    "jaccard_real_mean": 0.392,
+    "jaccard_aug_mean": 0.379,
+    "mean_delta": -0.013,
+    "wilcoxon_p": 0.514975103964701,
+    "augmentation_helps": false
+  },
+  "n20": {
+    "jaccard_real_mean": 0.509,
+    "jaccard_aug_mean": 0.46,
+    "mean_delta": -0.049,
+    "wilcoxon_p": 0.49368211722609556,
+    "augmentation_helps": false
+  },
+  "n40": {
+    "jaccard_real_mean": 0.617,
+    "jaccard_aug_mean": 0.497,
+    "mean_delta": -0.119,
+    "wilcoxon_p": 0.1587150175320765,
+    "augmentation_helps": false
+  }
+}

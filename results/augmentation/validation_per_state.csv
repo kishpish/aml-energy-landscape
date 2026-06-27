@@ -1,0 +1,6 @@
+state,n_real,n_synth,is_small,range_frac_avg,corr_pearson,marker_KS_p_mean,basin_fidelity,W2_norm,expected_basin,range_pass,corr_pass,marker_pass,basin_pass,w2_pass,n_pass,verdict
+A1_basin_edge_0,1293,6465,False,0.986,0.814,0.9856,0.797,1.737,A1,True,True,True,True,False,4,PASS
+A1_basin_edge_3,12,60,True,0.999,0.005,0.9167,0.567,0.191,A1,True,False,True,True,True,4,PASS-SMALL
+A1_basin_edge_4,9,54,True,0.998,0.025,0.9868,0.63,0.224,A1,True,False,True,True,True,4,PASS-SMALL
+A1_basin_edge_1,6,54,True,0.998,0.018,0.784,0.63,0.09,A1,True,False,True,True,True,4,PASS-SMALL
+A1_basin_edge_2,6,54,True,0.994,0.066,0.8971,0.093,0.275,A1,True,False,True,False,True,3,REVIEW

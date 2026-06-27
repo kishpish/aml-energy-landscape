@@ -1,0 +1,24 @@
+{
+  "n_cells": 38193,
+  "n_attractors": 4,
+  "n_saddles_from_hessian": 2,
+  "n_saddles_via_midpoint_LBFGS": 0,
+  "basin_counts": {
+    "A1": 22487,
+    "A0": 11368,
+    "A3": 2859,
+    "A2": 1479
+  },
+  "rare_category_counts": {
+    "core": 35941,
+    "basin_edge": 1910,
+    "high_U": 342
+  },
+  "n_rare_states": 5,
+  "barriers_min": 5.338898181915283,
+  "barriers_max": 24.267749786376957,
+  "barriers_median": 21.00563335418701,
+  "score_norm_mean_real_cells": 25.40804100036621,
+  "phi_min": -27.166391372680664,
+  "phi_max": 20.333145141601562
+}

@@ -1,0 +1,106 @@
+{
+  "n_state_drug_pairs": 38224,
+  "n_high_confidence": 221,
+  "n_states_with_hc": 39,
+  "n_drugs_with_hc": 86,
+  "top_hc_hits": [
+    {
+      "state_id": "A1_L1_9",
+      "drug": "GSK-2334470",
+      "composite_score": 0.9927884615384616,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_12",
+      "drug": "PT-630",
+      "composite_score": 0.9915865384615385,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_0",
+      "drug": "IKK3-inhibitor-IX",
+      "composite_score": 0.9879807692307693,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_basin_edge_0",
+      "drug": "cerulenin",
+      "composite_score": 0.9879807692307693,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A0_L1_9",
+      "drug": "RLM-2-12",
+      "composite_score": 0.9879807692307692,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A0_L1_11",
+      "drug": "PRIMA1",
+      "composite_score": 0.9867788461538463,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_5",
+      "drug": "IKK3-inhibitor-IX",
+      "composite_score": 0.984375,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_3",
+      "drug": "CHEMBL-1222381",
+      "composite_score": 0.9831730769230769,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_12",
+      "drug": "IKK3-inhibitor-IX",
+      "composite_score": 0.9819711538461539,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_2",
+      "drug": "BRD-A36275421",
+      "composite_score": 0.9819711538461539,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_14",
+      "drug": "BAX-channel-blocker",
+      "composite_score": 0.9819711538461539,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A2_L1_0",
+      "drug": "BRD-K84924563",
+      "composite_score": 0.9807692307692308,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_9",
+      "drug": "dalcetrapib",
+      "composite_score": 0.9807692307692307,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A0_L1_8",
+      "drug": "NFKB-activation-inhibitor-II",
+      "composite_score": 0.9795673076923077,
+      "n_signals": 2
+    },
+    {
+      "state_id": "A1_L1_12",
+      "drug": "dalcetrapib",
+      "composite_score": 0.9795673076923077,
+      "n_signals": 2
+    }
+  ],
+  "beataml_validation_examples": [
+    "A0 (monocyte) states \u2194 Trametinib/Selumetinib (MEK-i) sensitivity",
+    "A0_L1_2 (monocyte) \u2194 Panobinostat (HDAC-i) \u2014 recapitulates Beat AML 2.0",
+    "A1_basin_edge_0 (HSPC rare) \u2194 GSK-2879552 (LSD1-i) sensitivity"
+  ],
+  "connectivity_facevalidity": [
+    "cytarabine in top reversal hits for A1_L1_0 (quiescent LSC state)"
+  ]
+}

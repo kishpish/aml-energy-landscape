@@ -1,0 +1,6 @@
+state,auc,n_synth,n_real,quality
+A1_basin_edge_0,0.774,6465,1293,acceptable
+A1_basin_edge_3,0.892,60,12,biased
+A1_basin_edge_4,0.901,54,9,biased
+A1_basin_edge_1,0.662,54,6,acceptable
+A1_basin_edge_2,0.981,54,6,biased

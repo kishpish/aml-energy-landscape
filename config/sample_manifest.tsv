@@ -1,0 +1,45 @@
+sample_id	gsm	patient_id	timepoint	day_since_dx	treatment_status	disease_state	cohort	notes
+AML1012-D0	GSM3587924	AML1012	D0	0	pre_treatment	AML_diagnosis	primary
+AML210A-D0	GSM3587926	AML210A	D0	0	pre_treatment	AML_diagnosis	primary
+AML314-D0	GSM3587928	AML314	D0	0	pre_treatment	AML_diagnosis	primary
+AML314-D31	GSM3587930	AML314	D31	31	post_chemo	AML_residual_or_relapse	primary	day31_post_induction
+AML328-D0	GSM3587932	AML328	D0	0	pre_treatment	AML_diagnosis	primary
+AML328-D29	GSM3587938	AML328	D29	29	post_chemo	AML_residual_or_relapse	primary	day29_post_induction
+AML328-D113	GSM3587934	AML328	D113	113	post_chemo	AML_residual_or_relapse	primary	day113_post_induction
+AML328-D171	GSM3587936	AML328	D171	171	post_chemo	AML_residual_or_relapse	primary	day171_post_induction
+AML329-D0	GSM3587941	AML329	D0	0	pre_treatment	AML_diagnosis	primary
+AML329-D20	GSM3587942	AML329	D20	20	post_chemo	AML_residual_or_relapse	primary
+AML329-D37	GSM3587944	AML329	D37	37	post_chemo	AML_residual_or_relapse	primary
+AML371-D0	GSM3587946	AML371	D0	0	pre_treatment	AML_diagnosis	primary
+AML371-D34	GSM3587948	AML371	D34	34	post_chemo	AML_residual_or_relapse	primary
+AML419A-D0	GSM3587950	AML419A	D0	0	pre_treatment	AML_diagnosis	primary
+AML420B-D0	GSM3587952	AML420B	D0	0	pre_treatment	AML_diagnosis	primary
+AML420B-D14	GSM3587954	AML420B	D14	14	post_chemo	AML_residual_or_relapse	primary
+AML420B-D35	GSM3587956	AML420B	D35	35	post_chemo	AML_residual_or_relapse	primary
+AML475-D0	GSM3587958	AML475	D0	0	pre_treatment	AML_diagnosis	primary
+AML475-D29	GSM3587960	AML475	D29	29	post_chemo	AML_residual_or_relapse	primary
+AML556-D0	GSM3587962	AML556	D0	0	pre_treatment	AML_diagnosis	primary
+AML556-D15	GSM3587964	AML556	D15	15	post_chemo	AML_residual_or_relapse	primary
+AML556-D31	GSM3587966	AML556	D31	31	post_chemo	AML_residual_or_relapse	primary
+AML707B-D0	GSM3587968	AML707B	D0	0	pre_treatment	AML_diagnosis	primary
+AML707B-D18	GSM3587970	AML707B	D18	18	post_chemo	AML_residual_or_relapse	primary
+AML707B-D41	GSM3587972	AML707B	D41	41	post_chemo	AML_residual_or_relapse	primary
+AML707B-D97	GSM3587974	AML707B	D97	97	post_chemo	AML_residual_or_relapse	primary
+AML707B-D113	GSM3587976	AML707B	D113	113	post_chemo	AML_residual_or_relapse	primary
+AML722B-D0	GSM3587978	AML722B	D0	0	pre_treatment	AML_diagnosis	primary
+AML722B-D49	GSM3587980	AML722B	D49	49	post_chemo	AML_residual_or_relapse	primary
+AML870-D0	GSM3587982	AML870	D0	0	pre_treatment	AML_diagnosis	primary
+AML870-D14	GSM3587984	AML870	D14	14	post_chemo	AML_residual_or_relapse	primary
+AML916-D0	GSM3587986	AML916	D0	0	pre_treatment	AML_diagnosis	primary
+AML921A-D0	GSM3587988	AML921A	D0	0	pre_treatment	AML_diagnosis	primary
+AML997-D0	GSM3587990	AML997	D0	0	pre_treatment	AML_diagnosis	primary
+AML997-D35	GSM3587992	AML997	D35	35	post_chemo	AML_residual_or_relapse	primary
+BM1	GSM3587994	BM1	healthy	NA	healthy	healthy_donor	primary
+BM2	GSM3587996	BM2	healthy	NA	healthy	healthy_donor	primary
+BM3	GSM3587998	BM3	healthy	NA	healthy	healthy_donor	primary
+BM4	GSM3588000	BM4	healthy	NA	healthy	healthy_donor	primary
+BM5-34p	GSM3588002	BM5	healthy_sorted_CD34p	NA	healthy	healthy_donor	primary	CD34+_FACS_enriched
+BM5-34p38n	GSM3588003	BM5	healthy_sorted_CD34pCD38n	NA	healthy	healthy_donor	primary	CD34+CD38-_FACS_enriched
+MUTZ3	GSM3588004	cell_line	in_vitro	NA	in_vitro	cell_line	validation	MUTZ3_AML_cell_line_excluded_from_primary
+OCI-AML3	GSM3588005	cell_line	in_vitro	NA	in_vitro	cell_line	validation	OCI-AML3_AML_cell_line_excluded_from_primary
+AML328-nanopore	GSM3587939	AML328	nanopore	NA	pre_treatment	AML_diagnosis	validation	nanopore_long_read_excluded_from_primary

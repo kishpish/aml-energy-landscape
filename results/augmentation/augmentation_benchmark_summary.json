@@ -1,0 +1,25 @@
+{
+  "n_states": 8,
+  "reps_per_cell": 12,
+  "n10": {
+    "jaccard_real_mean": 0.392,
+    "jaccard_aug_mean": 0.379,
+    "mean_delta": -0.013,
+    "wilcoxon_p": 0.514975103964701,
+    "augmentation_helps": false
+  },
+  "n20": {
+    "jaccard_real_mean": 0.509,
+    "jaccard_aug_mean": 0.46,
+    "mean_delta": -0.049,
+    "wilcoxon_p": 0.49368211722609556,
+    "augmentation_helps": false
+  },
+  "n40": {
+    "jaccard_real_mean": 0.617,
+    "jaccard_aug_mean": 0.497,
+    "mean_delta": -0.119,
+    "wilcoxon_p": 0.1587150175320765,
+    "augmentation_helps": false
+  }
+}

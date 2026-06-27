@@ -1,0 +1,11 @@
+{
+  "n_patients": 132,
+  "n_events": 80,
+  "panel_heldout_cindex_mean": 0.567,
+  "panel_heldout_cindex_sd": 0.03,
+  "lsc17_heldout_cindex_mean": 0.587,
+  "lsc17_heldout_cindex_sd": 0.01,
+  "protocol": "5-fold nested CV (feature selection inside train fold), 5 seeds",
+  "note": "Out-of-sample; replaces the in-sample 0.775 from Phase 8.",
+  "panel_beats_lsc17_heldout": false
+}

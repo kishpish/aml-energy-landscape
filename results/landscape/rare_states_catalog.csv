@@ -1,0 +1,6 @@
+state_id,n_cells,basin,category,mean_phi,mean_basin_margin,top_vangalen_type,top_vangalen_frac,top_atlas_type,top_atlas_frac
+A1_basin_edge_0,1293,A1,basin_edge,-13.881635665893555,0.04253822937607765,Prog-like,0.2273781902552204,HSPC,0.5406032482598608
+A1_basin_edge_3,12,A1,basin_edge,-10.886116981506348,0.05292588472366333,B,1.0,B,0.5833333333333334
+A1_basin_edge_4,9,A1,basin_edge,-5.971841335296631,0.052900951355695724,HSC-like,0.4444444444444444,nan,0.8888888888888888
+A1_basin_edge_2,6,A1,basin_edge,-1.1315728425979614,0.014186183921992779,lateEry,1.0,nan,0.6666666666666666
+A1_basin_edge_1,6,A1,basin_edge,-11.142338752746582,0.00701884413138032,lateEry,1.0,nan,1.0

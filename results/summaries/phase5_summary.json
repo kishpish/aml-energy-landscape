@@ -1,0 +1,148 @@
+{
+  "n_states": 79,
+  "n_states_computed_bio": 46,
+  "n_rare_states": 5,
+  "n_states_longitudinal_observed": 77,
+  "lsc_subtypes": [
+    {
+      "lsc_subtype_id": "LSC_sub_0",
+      "n_cells": 1681,
+      "n_real": 1681,
+      "n_synth": 0,
+      "n_patients": 17,
+      "dominant_basin": "A1",
+      "dominant_state_id": "A1_L1_0",
+      "G1_frac": 0.767,
+      "S_frac": 0.123,
+      "G2M_frac": 0.109,
+      "cycling_frac": 0.232,
+      "phase_tag": "mixed",
+      "LSC17_mean": 0.309,
+      "LSC6_mean": 0.645,
+      "D_trace_mean": 2.28
+    },
+    {
+      "lsc_subtype_id": "LSC_sub_1",
+      "n_cells": 180,
+      "n_real": 180,
+      "n_synth": 0,
+      "n_patients": 13,
+      "dominant_basin": "A1",
+      "dominant_state_id": "A1_L1_4",
+      "G1_frac": 0.061,
+      "S_frac": 0.272,
+      "G2M_frac": 0.667,
+      "cycling_frac": 0.939,
+      "phase_tag": "cycling",
+      "LSC17_mean": 0.31,
+      "LSC6_mean": 0.592,
+      "D_trace_mean": 2.733
+    }
+  ],
+  "top_5_by_size": [
+    {
+      "state_id": "A1_basin_edge_0",
+      "basin": "A1",
+      "n_cells_total": 7758,
+      "top_vangalen_type": "Prog-like",
+      "malignant_frac": 0.082
+    },
+    {
+      "state_id": "A0_L1_2",
+      "basin": "A0",
+      "n_cells_total": 5994,
+      "top_vangalen_type": "Mono-like",
+      "malignant_frac": 0.573
+    },
+    {
+      "state_id": "A1_L1_1",
+      "basin": "A1",
+      "n_cells_total": 5340,
+      "top_vangalen_type": "T",
+      "malignant_frac": 0.003
+    },
+    {
+      "state_id": "A1_L1_0",
+      "basin": "A1",
+      "n_cells_total": 3492,
+      "top_vangalen_type": "Prog-like",
+      "malignant_frac": 0.601
+    },
+    {
+      "state_id": "A1_L1_5",
+      "basin": "A1",
+      "n_cells_total": 2814,
+      "top_vangalen_type": "NK",
+      "malignant_frac": 0.002
+    }
+  ],
+  "top_5_persistent": [
+    {
+      "state_id": "A1_L1_16",
+      "basin": "A1",
+      "persistence_log2_PR_median": 2.6716,
+      "persistence_frac_enriched": 0.778
+    },
+    {
+      "state_id": "A3_L1_7",
+      "basin": "A3",
+      "persistence_log2_PR_median": 2.49225,
+      "persistence_frac_enriched": 0.9
+    },
+    {
+      "state_id": "A1_L1_1",
+      "basin": "A1",
+      "persistence_log2_PR_median": 2.4526,
+      "persistence_frac_enriched": 0.818
+    },
+    {
+      "state_id": "A3_L1_1",
+      "basin": "A3",
+      "persistence_log2_PR_median": 2.0844,
+      "persistence_frac_enriched": 0.727
+    },
+    {
+      "state_id": "A3_L1_5",
+      "basin": "A3",
+      "persistence_log2_PR_median": 2.0093,
+      "persistence_frac_enriched": 1.0
+    }
+  ],
+  "deepest_basin_states": [
+    {
+      "state_id": "A1_L1_2",
+      "basin": "A1",
+      "basin_depth": 14.104,
+      "D_trace_mean": 14.925,
+      "committor_to_mature_monocyte": 0.505
+    },
+    {
+      "state_id": "A1_L1_11",
+      "basin": "A1",
+      "basin_depth": 13.853,
+      "D_trace_mean": 16.439,
+      "committor_to_mature_monocyte": 0.33
+    },
+    {
+      "state_id": "A1_L1_13",
+      "basin": "A1",
+      "basin_depth": 11.958,
+      "D_trace_mean": 14.9,
+      "committor_to_mature_monocyte": 0.361
+    },
+    {
+      "state_id": "A1_L1_12",
+      "basin": "A1",
+      "basin_depth": 11.784,
+      "D_trace_mean": 16.895,
+      "committor_to_mature_monocyte": 0.525
+    },
+    {
+      "state_id": "A0_L1_13",
+      "basin": "A0",
+      "basin_depth": 10.386,
+      "D_trace_mean": 15.225,
+      "committor_to_mature_monocyte": 0.509
+    }
+  ]
+}

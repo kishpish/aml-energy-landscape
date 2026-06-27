@@ -1,0 +1,1979 @@
+Seed set to 0
+[scvi] loading QC'd AnnData…
+[scvi] 38,193 cells × 27,899 genes
+[scvi] after gene filter (≥10 cells): 19,441 genes
+[scvi] cell-cycle gene coverage: S=42/43, G2M=52/54
+[scvi] cell cycle phases: {'G1': 23740, 'G2M': 10089, 'S': 4364}
+[scvi] selecting HVGs (seurat_v3 with batch_key='patient_id')…
+[scvi] HVGs: 3000
+[scvi] training subset: 38,193 × 3,000
+
+[scvi] training d=30…
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+You are using a CUDA device ('NVIDIA A100-SXM4-80GB') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+Training:   0%|                                        | 0/400 [00:00<?, ?it/s]
+Epoch 1/400:   0%|                                     | 0/400 [00:00<?, ?it/s]
+Epoch 1/400:   0%|                             | 1/400 [00:04<32:44,  4.92s/it]
+Epoch 1/400:   0%| | 1/400 [00:04<32:44,  4.92s/it, v_num=1, train_loss_step=58
+Epoch 2/400:   0%| | 1/400 [00:04<32:44,  4.92s/it, v_num=1, train_loss_step=58
+Epoch 2/400:   0%| | 2/400 [00:07<24:01,  3.62s/it, v_num=1, train_loss_step=58
+Epoch 2/400:   0%| | 2/400 [00:07<24:01,  3.62s/it, v_num=1, train_loss_step=59
+Epoch 3/400:   0%| | 2/400 [00:07<24:01,  3.62s/it, v_num=1, train_loss_step=59
+Epoch 3/400:   1%| | 3/400 [00:10<21:28,  3.25s/it, v_num=1, train_loss_step=59
+Epoch 3/400:   1%| | 3/400 [00:10<21:28,  3.25s/it, v_num=1, train_loss_step=50
+Epoch 4/400:   1%| | 3/400 [00:10<21:28,  3.25s/it, v_num=1, train_loss_step=50
+Epoch 4/400:   1%| | 4/400 [00:13<19:56,  3.02s/it, v_num=1, train_loss_step=50
+Epoch 4/400:   1%| | 4/400 [00:13<19:56,  3.02s/it, v_num=1, train_loss_step=53
+Epoch 5/400:   1%| | 4/400 [00:13<19:56,  3.02s/it, v_num=1, train_loss_step=53
+Epoch 5/400:   1%| | 5/400 [00:15<19:02,  2.89s/it, v_num=1, train_loss_step=53
+Epoch 5/400:   1%| | 5/400 [00:15<19:02,  2.89s/it, v_num=1, train_loss_step=59
+Epoch 6/400:   1%| | 5/400 [00:15<19:02,  2.89s/it, v_num=1, train_loss_step=59
+Epoch 6/400:   2%| | 6/400 [00:18<18:30,  2.82s/it, v_num=1, train_loss_step=59
+Epoch 6/400:   2%| | 6/400 [00:18<18:30,  2.82s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 6/400 [00:18<18:30,  2.82s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 7/400 [00:21<18:11,  2.78s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 7/400 [00:21<18:11,  2.78s/it, v_num=1, train_loss_step=55
+Epoch 8/400:   2%| | 7/400 [00:21<18:11,  2.78s/it, v_num=1, train_loss_step=55
+Epoch 8/400:   2%| | 8/400 [00:23<17:56,  2.75s/it, v_num=1, train_loss_step=55
+Epoch 8/400:   2%| | 8/400 [00:23<17:56,  2.75s/it, v_num=1, train_loss_step=55
+Epoch 9/400:   2%| | 8/400 [00:23<17:56,  2.75s/it, v_num=1, train_loss_step=55
+Epoch 9/400:   2%| | 9/400 [00:26<17:53,  2.75s/it, v_num=1, train_loss_step=55
+Epoch 9/400:   2%| | 9/400 [00:26<17:53,  2.75s/it, v_num=1, train_loss_step=55
+Epoch 10/400:   2%| | 9/400 [00:26<17:53,  2.75s/it, v_num=1, train_loss_step=5
+Epoch 10/400:   2%| | 10/400 [00:29<17:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 10/400:   2%| | 10/400 [00:29<17:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 11/400:   2%| | 10/400 [00:29<17:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 11/400:   3%| | 11/400 [00:31<17:39,  2.72s/it, v_num=1, train_loss_step=
+Epoch 11/400:   3%| | 11/400 [00:31<17:39,  2.72s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 11/400 [00:31<17:39,  2.72s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 12/400 [00:34<17:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 12/400 [00:34<17:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 12/400 [00:34<17:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 13/400 [00:37<17:51,  2.77s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 13/400 [00:37<17:51,  2.77s/it, v_num=1, train_loss_step=
+Epoch 14/400:   3%| | 13/400 [00:37<17:51,  2.77s/it, v_num=1, train_loss_step=
+Epoch 14/400:   4%| | 14/400 [00:40<17:49,  2.77s/it, v_num=1, train_loss_step=
+Epoch 14/400:   4%| | 14/400 [00:40<17:49,  2.77s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 14/400 [00:40<17:49,  2.77s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 15/400 [00:43<17:38,  2.75s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 15/400 [00:43<17:38,  2.75s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 15/400 [00:43<17:38,  2.75s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 16/400 [00:45<17:27,  2.73s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 16/400 [00:45<17:27,  2.73s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 16/400 [00:45<17:27,  2.73s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 17/400 [00:48<17:20,  2.72s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 17/400 [00:48<17:20,  2.72s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 17/400 [00:48<17:20,  2.72s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 18/400 [00:51<17:23,  2.73s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 18/400 [00:51<17:23,  2.73s/it, v_num=1, train_loss_step=
+Epoch 19/400:   4%| | 18/400 [00:51<17:23,  2.73s/it, v_num=1, train_loss_step=
+Epoch 19/400:   5%| | 19/400 [00:53<17:16,  2.72s/it, v_num=1, train_loss_step=
+Epoch 19/400:   5%| | 19/400 [00:53<17:16,  2.72s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 19/400 [00:53<17:16,  2.72s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 20/400 [00:56<17:16,  2.73s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 20/400 [00:56<17:16,  2.73s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 20/400 [00:56<17:16,  2.73s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 21/400 [00:59<17:06,  2.71s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 21/400 [00:59<17:06,  2.71s/it, v_num=1, train_loss_step=
+Epoch 22/400:   5%| | 21/400 [00:59<17:06,  2.71s/it, v_num=1, train_loss_step=
+Epoch 22/400:   6%| | 22/400 [01:02<17:19,  2.75s/it, v_num=1, train_loss_step=
+Epoch 22/400:   6%| | 22/400 [01:02<17:19,  2.75s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 22/400 [01:02<17:19,  2.75s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 23/400 [01:04<17:23,  2.77s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 23/400 [01:04<17:23,  2.77s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 23/400 [01:04<17:23,  2.77s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 24/400 [01:07<17:24,  2.78s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 24/400 [01:07<17:24,  2.78s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 24/400 [01:07<17:24,  2.78s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 25/400 [01:10<17:24,  2.79s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 25/400 [01:10<17:24,  2.79s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 25/400 [01:10<17:24,  2.79s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 26/400 [01:13<17:23,  2.79s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 26/400 [01:13<17:23,  2.79s/it, v_num=1, train_loss_step=
+Epoch 27/400:   6%| | 26/400 [01:13<17:23,  2.79s/it, v_num=1, train_loss_step=
+Epoch 27/400:   7%| | 27/400 [01:16<17:18,  2.78s/it, v_num=1, train_loss_step=
+Epoch 27/400:   7%| | 27/400 [01:16<17:18,  2.78s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 27/400 [01:16<17:18,  2.78s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 28/400 [01:18<17:02,  2.75s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 28/400 [01:18<17:02,  2.75s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 28/400 [01:18<17:02,  2.75s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 29/400 [01:21<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 29/400 [01:21<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 30/400:   7%| | 29/400 [01:21<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 30/400:   8%| | 30/400 [01:24<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 30/400:   8%| | 30/400 [01:24<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 30/400 [01:24<16:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 31/400 [01:26<16:50,  2.74s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 31/400 [01:26<16:50,  2.74s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 31/400 [01:26<16:50,  2.74s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 32/400 [01:29<16:49,  2.74s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 32/400 [01:29<16:49,  2.74s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 32/400 [01:29<16:49,  2.74s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 33/400 [01:32<16:47,  2.74s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 33/400 [01:32<16:47,  2.74s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 33/400 [01:32<16:47,  2.74s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 34/400 [01:35<16:27,  2.70s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 34/400 [01:35<16:27,  2.70s/it, v_num=1, train_loss_step=
+Epoch 35/400:   8%| | 34/400 [01:35<16:27,  2.70s/it, v_num=1, train_loss_step=
+Epoch 35/400:   9%| | 35/400 [01:37<16:14,  2.67s/it, v_num=1, train_loss_step=
+Epoch 35/400:   9%| | 35/400 [01:37<16:14,  2.67s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 35/400 [01:37<16:14,  2.67s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 36/400 [01:40<16:11,  2.67s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 36/400 [01:40<16:11,  2.67s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 36/400 [01:40<16:11,  2.67s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 37/400 [01:42<16:09,  2.67s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 37/400 [01:42<16:09,  2.67s/it, v_num=1, train_loss_step=
+Epoch 38/400:   9%| | 37/400 [01:42<16:09,  2.67s/it, v_num=1, train_loss_step=
+Epoch 38/400:  10%| | 38/400 [01:45<16:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 38/400:  10%| | 38/400 [01:45<16:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 38/400 [01:45<16:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 39/400 [01:48<16:05,  2.67s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 39/400 [01:48<16:05,  2.67s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 39/400 [01:48<16:05,  2.67s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 40/400 [01:51<16:03,  2.68s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 40/400 [01:51<16:03,  2.68s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 40/400 [01:51<16:03,  2.68s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 41/400 [01:53<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 41/400 [01:53<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 41/400 [01:53<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 42/400 [01:56<15:47,  2.65s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 42/400 [01:56<15:47,  2.65s/it, v_num=1, train_loss_step=
+Epoch 43/400:  10%| | 42/400 [01:56<15:47,  2.65s/it, v_num=1, train_loss_step=
+Epoch 43/400:  11%| | 43/400 [01:58<15:43,  2.64s/it, v_num=1, train_loss_step=
+Epoch 43/400:  11%| | 43/400 [01:58<15:43,  2.64s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 43/400 [01:58<15:43,  2.64s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 44/400 [02:01<15:44,  2.65s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 44/400 [02:01<15:44,  2.65s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 44/400 [02:01<15:44,  2.65s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 45/400 [02:04<15:39,  2.65s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 45/400 [02:04<15:39,  2.65s/it, v_num=1, train_loss_step=
+Epoch 46/400:  11%| | 45/400 [02:04<15:39,  2.65s/it, v_num=1, train_loss_step=
+Epoch 46/400:  12%| | 46/400 [02:06<15:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 46/400:  12%| | 46/400 [02:06<15:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 46/400 [02:06<15:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 47/400 [02:09<15:42,  2.67s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 47/400 [02:09<15:42,  2.67s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 47/400 [02:09<15:42,  2.67s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 48/400 [02:12<15:31,  2.65s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 48/400 [02:12<15:31,  2.65s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 48/400 [02:12<15:31,  2.65s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 49/400 [02:14<15:28,  2.65s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 49/400 [02:14<15:28,  2.65s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%| | 49/400 [02:14<15:28,  2.65s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%|▏| 50/400 [02:17<15:25,  2.65s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%|▏| 50/400 [02:17<15:25,  2.65s/it, v_num=1, train_loss_step=
+Epoch 51/400:  12%|▏| 50/400 [02:17<15:25,  2.65s/it, v_num=1, train_loss_step=
+Epoch 51/400:  13%|▏| 51/400 [02:20<15:23,  2.65s/it, v_num=1, train_loss_step=
+Epoch 51/400:  13%|▏| 51/400 [02:20<15:23,  2.65s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 51/400 [02:20<15:23,  2.65s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 52/400 [02:22<15:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 52/400 [02:22<15:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 52/400 [02:22<15:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 53/400 [02:25<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 53/400 [02:25<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 54/400:  13%|▏| 53/400 [02:25<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 54/400:  14%|▏| 54/400 [02:28<15:26,  2.68s/it, v_num=1, train_loss_step=
+Epoch 54/400:  14%|▏| 54/400 [02:28<15:26,  2.68s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 54/400 [02:28<15:26,  2.68s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 55/400 [02:30<15:26,  2.69s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 55/400 [02:30<15:26,  2.69s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 55/400 [02:30<15:26,  2.69s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 56/400 [02:33<15:25,  2.69s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 56/400 [02:33<15:25,  2.69s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 56/400 [02:33<15:25,  2.69s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 57/400 [02:36<15:21,  2.69s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 57/400 [02:36<15:21,  2.69s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 57/400 [02:36<15:21,  2.69s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 58/400 [02:38<15:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 58/400 [02:38<15:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 59/400:  14%|▏| 58/400 [02:38<15:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 59/400:  15%|▏| 59/400 [02:41<15:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 59/400:  15%|▏| 59/400 [02:41<15:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 59/400 [02:41<15:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 60/400 [02:44<14:58,  2.64s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 60/400 [02:44<14:58,  2.64s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 60/400 [02:44<14:58,  2.64s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 61/400 [02:46<14:52,  2.63s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 61/400 [02:46<14:52,  2.63s/it, v_num=1, train_loss_step=
+Epoch 62/400:  15%|▏| 61/400 [02:46<14:52,  2.63s/it, v_num=1, train_loss_step=
+Epoch 62/400:  16%|▏| 62/400 [02:49<14:49,  2.63s/it, v_num=1, train_loss_step=
+Epoch 62/400:  16%|▏| 62/400 [02:49<14:49,  2.63s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 62/400 [02:49<14:49,  2.63s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 63/400 [02:52<14:55,  2.66s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 63/400 [02:52<14:55,  2.66s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 63/400 [02:52<14:55,  2.66s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 64/400 [02:54<14:53,  2.66s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 64/400 [02:54<14:53,  2.66s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 64/400 [02:54<14:53,  2.66s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 65/400 [02:57<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 65/400 [02:57<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 65/400 [02:57<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 66/400 [03:00<14:55,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 66/400 [03:00<14:55,  2.68s/it, v_num=1, train_loss_step=
+Epoch 67/400:  16%|▏| 66/400 [03:00<14:55,  2.68s/it, v_num=1, train_loss_step=
+Epoch 67/400:  17%|▏| 67/400 [03:02<15:00,  2.70s/it, v_num=1, train_loss_step=
+Epoch 67/400:  17%|▏| 67/400 [03:02<15:00,  2.70s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 67/400 [03:02<15:00,  2.70s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 68/400 [03:05<15:11,  2.74s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 68/400 [03:05<15:11,  2.74s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 68/400 [03:05<15:11,  2.74s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 69/400 [03:08<15:10,  2.75s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 69/400 [03:08<15:10,  2.75s/it, v_num=1, train_loss_step=
+Epoch 70/400:  17%|▏| 69/400 [03:08<15:10,  2.75s/it, v_num=1, train_loss_step=
+Epoch 70/400:  18%|▏| 70/400 [03:11<15:16,  2.78s/it, v_num=1, train_loss_step=
+Epoch 70/400:  18%|▏| 70/400 [03:11<15:16,  2.78s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 70/400 [03:11<15:16,  2.78s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 71/400 [03:14<15:07,  2.76s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 71/400 [03:14<15:07,  2.76s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 71/400 [03:14<15:07,  2.76s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 72/400 [03:16<14:57,  2.73s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 72/400 [03:16<14:57,  2.73s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 72/400 [03:16<14:57,  2.73s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 73/400 [03:19<14:48,  2.72s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 73/400 [03:19<14:48,  2.72s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 73/400 [03:19<14:48,  2.72s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 74/400 [03:22<14:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 74/400 [03:22<14:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 75/400:  18%|▏| 74/400 [03:22<14:51,  2.73s/it, v_num=1, train_loss_step=
+Epoch 75/400:  19%|▏| 75/400 [03:24<14:46,  2.73s/it, v_num=1, train_loss_step=
+Epoch 75/400:  19%|▏| 75/400 [03:24<14:46,  2.73s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 75/400 [03:24<14:46,  2.73s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 76/400 [03:27<14:41,  2.72s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 76/400 [03:27<14:41,  2.72s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 76/400 [03:27<14:41,  2.72s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 77/400 [03:30<14:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 77/400 [03:30<14:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 78/400:  19%|▏| 77/400 [03:30<14:36,  2.71s/it, v_num=1, train_loss_step=
+Epoch 78/400:  20%|▏| 78/400 [03:33<14:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 78/400:  20%|▏| 78/400 [03:33<14:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 78/400 [03:33<14:39,  2.73s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 79/400 [03:35<14:34,  2.72s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 79/400 [03:35<14:34,  2.72s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 79/400 [03:35<14:34,  2.72s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 80/400 [03:38<14:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 80/400 [03:38<14:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 80/400 [03:38<14:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 81/400 [03:41<14:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 81/400 [03:41<14:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 81/400 [03:41<14:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 82/400 [03:43<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 82/400 [03:43<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 83/400:  20%|▏| 82/400 [03:43<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 83/400:  21%|▏| 83/400 [03:46<14:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 83/400:  21%|▏| 83/400 [03:46<14:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 83/400 [03:46<14:07,  2.67s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 84/400 [03:49<14:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 84/400 [03:49<14:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 84/400 [03:49<14:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 85/400 [03:51<14:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 85/400 [03:51<14:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 86/400:  21%|▏| 85/400 [03:51<14:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 86/400:  22%|▏| 86/400 [03:54<14:09,  2.70s/it, v_num=1, train_loss_step=
+Epoch 86/400:  22%|▏| 86/400 [03:54<14:09,  2.70s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 86/400 [03:54<14:09,  2.70s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 87/400 [03:57<13:58,  2.68s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 87/400 [03:57<13:58,  2.68s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 87/400 [03:57<13:58,  2.68s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 88/400 [03:59<13:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 88/400 [03:59<13:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 88/400 [03:59<13:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 89/400 [04:02<13:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 89/400 [04:02<13:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 89/400 [04:02<13:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 90/400 [04:05<14:09,  2.74s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 90/400 [04:05<14:09,  2.74s/it, v_num=1, train_loss_step=
+Epoch 91/400:  22%|▏| 90/400 [04:05<14:09,  2.74s/it, v_num=1, train_loss_step=
+Epoch 91/400:  23%|▏| 91/400 [04:08<14:13,  2.76s/it, v_num=1, train_loss_step=
+Epoch 91/400:  23%|▏| 91/400 [04:08<14:13,  2.76s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 91/400 [04:08<14:13,  2.76s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 92/400 [04:11<14:14,  2.78s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 92/400 [04:11<14:14,  2.78s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 92/400 [04:11<14:14,  2.78s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 93/400 [04:13<14:18,  2.80s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 93/400 [04:13<14:18,  2.80s/it, v_num=1, train_loss_step=
+Epoch 94/400:  23%|▏| 93/400 [04:13<14:18,  2.80s/it, v_num=1, train_loss_step=
+Epoch 94/400:  24%|▏| 94/400 [04:16<14:21,  2.81s/it, v_num=1, train_loss_step=
+Epoch 94/400:  24%|▏| 94/400 [04:16<14:21,  2.81s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 94/400 [04:16<14:21,  2.81s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 95/400 [04:19<14:19,  2.82s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 95/400 [04:19<14:19,  2.82s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 95/400 [04:19<14:19,  2.82s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 96/400 [04:22<14:12,  2.80s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 96/400 [04:22<14:12,  2.80s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 96/400 [04:22<14:12,  2.80s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 97/400 [04:25<14:07,  2.80s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 97/400 [04:25<14:07,  2.80s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 97/400 [04:25<14:07,  2.80s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 98/400 [04:27<13:58,  2.78s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 98/400 [04:27<13:58,  2.78s/it, v_num=1, train_loss_step=
+Epoch 99/400:  24%|▏| 98/400 [04:27<13:58,  2.78s/it, v_num=1, train_loss_step=
+Epoch 99/400:  25%|▏| 99/400 [04:30<13:48,  2.75s/it, v_num=1, train_loss_step=
+Epoch 99/400:  25%|▏| 99/400 [04:30<13:48,  2.75s/it, v_num=1, train_loss_step=
+Epoch 100/400:  25%|▏| 99/400 [04:30<13:48,  2.75s/it, v_num=1, train_loss_step
+Epoch 100/400:  25%|▎| 100/400 [04:33<13:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 100/400:  25%|▎| 100/400 [04:33<13:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 100/400 [04:33<13:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 101/400 [04:36<13:48,  2.77s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 101/400 [04:36<13:48,  2.77s/it, v_num=1, train_loss_ste
+Epoch 102/400:  25%|▎| 101/400 [04:36<13:48,  2.77s/it, v_num=1, train_loss_ste
+Epoch 102/400:  26%|▎| 102/400 [04:38<13:34,  2.73s/it, v_num=1, train_loss_ste
+Epoch 102/400:  26%|▎| 102/400 [04:38<13:34,  2.73s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 102/400 [04:38<13:34,  2.73s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 103/400 [04:41<13:38,  2.76s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 103/400 [04:41<13:38,  2.76s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 103/400 [04:41<13:38,  2.76s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 104/400 [04:44<13:30,  2.74s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 104/400 [04:44<13:30,  2.74s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 104/400 [04:44<13:30,  2.74s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 105/400 [04:46<13:25,  2.73s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 105/400 [04:46<13:25,  2.73s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 105/400 [04:46<13:25,  2.73s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 106/400 [04:49<13:19,  2.72s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 106/400 [04:49<13:19,  2.72s/it, v_num=1, train_loss_ste
+Epoch 107/400:  26%|▎| 106/400 [04:49<13:19,  2.72s/it, v_num=1, train_loss_ste
+Epoch 107/400:  27%|▎| 107/400 [04:52<13:15,  2.71s/it, v_num=1, train_loss_ste
+Epoch 107/400:  27%|▎| 107/400 [04:52<13:15,  2.71s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 107/400 [04:52<13:15,  2.71s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 108/400 [04:55<13:07,  2.70s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 108/400 [04:55<13:07,  2.70s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 108/400 [04:55<13:07,  2.70s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 109/400 [04:57<12:57,  2.67s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 109/400 [04:57<12:57,  2.67s/it, v_num=1, train_loss_ste
+Epoch 110/400:  27%|▎| 109/400 [04:57<12:57,  2.67s/it, v_num=1, train_loss_ste
+Epoch 110/400:  28%|▎| 110/400 [05:00<12:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 110/400:  28%|▎| 110/400 [05:00<12:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 110/400 [05:00<12:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 111/400 [05:02<12:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 111/400 [05:02<12:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 111/400 [05:02<12:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 112/400 [05:05<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 112/400 [05:05<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 112/400 [05:05<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 113/400 [05:08<12:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 113/400 [05:08<12:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 113/400 [05:08<12:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 114/400 [05:10<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 114/400 [05:10<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 115/400:  28%|▎| 114/400 [05:10<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 115/400:  29%|▎| 115/400 [05:13<12:37,  2.66s/it, v_num=1, train_loss_ste
+Epoch 115/400:  29%|▎| 115/400 [05:13<12:37,  2.66s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 115/400 [05:13<12:37,  2.66s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 116/400 [05:16<12:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 116/400 [05:16<12:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 116/400 [05:16<12:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 117/400 [05:18<12:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 117/400 [05:18<12:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 118/400:  29%|▎| 117/400 [05:18<12:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 118/400:  30%|▎| 118/400 [05:21<12:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 118/400:  30%|▎| 118/400 [05:21<12:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 118/400 [05:21<12:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 119/400 [05:24<12:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 119/400 [05:24<12:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 119/400 [05:24<12:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 120/400 [05:27<12:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 120/400 [05:27<12:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 120/400 [05:27<12:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 121/400 [05:29<12:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 121/400 [05:29<12:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 121/400 [05:29<12:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 122/400 [05:32<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 122/400 [05:32<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 123/400:  30%|▎| 122/400 [05:32<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 123/400:  31%|▎| 123/400 [05:35<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 123/400:  31%|▎| 123/400 [05:35<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 123/400 [05:35<12:29,  2.70s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 124/400 [05:37<12:24,  2.70s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 124/400 [05:37<12:24,  2.70s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 124/400 [05:37<12:24,  2.70s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 125/400 [05:40<12:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 125/400 [05:40<12:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 126/400:  31%|▎| 125/400 [05:40<12:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 126/400:  32%|▎| 126/400 [05:43<12:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 126/400:  32%|▎| 126/400 [05:43<12:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 126/400 [05:43<12:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 127/400 [05:45<12:14,  2.69s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 127/400 [05:45<12:14,  2.69s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 127/400 [05:45<12:14,  2.69s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 128/400 [05:48<12:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 128/400 [05:48<12:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 128/400 [05:48<12:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 129/400 [05:51<12:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 129/400 [05:51<12:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 129/400 [05:51<12:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 130/400 [05:53<12:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 130/400 [05:53<12:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 131/400:  32%|▎| 130/400 [05:53<12:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 131/400:  33%|▎| 131/400 [05:56<11:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 131/400:  33%|▎| 131/400 [05:56<11:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 131/400 [05:56<11:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 132/400 [05:59<11:54,  2.67s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 132/400 [05:59<11:54,  2.67s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 132/400 [05:59<11:54,  2.67s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 133/400 [06:01<11:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 133/400 [06:01<11:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 134/400:  33%|▎| 133/400 [06:01<11:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 134/400:  34%|▎| 134/400 [06:04<11:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 134/400:  34%|▎| 134/400 [06:04<11:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 134/400 [06:04<11:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 135/400 [06:07<11:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 135/400 [06:07<11:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 135/400 [06:07<11:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 136/400 [06:09<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 136/400 [06:09<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 136/400 [06:09<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 137/400 [06:12<11:37,  2.65s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 137/400 [06:12<11:37,  2.65s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 137/400 [06:12<11:37,  2.65s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 138/400 [06:15<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 138/400 [06:15<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 139/400:  34%|▎| 138/400 [06:15<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 139/400:  35%|▎| 139/400 [06:17<11:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 139/400:  35%|▎| 139/400 [06:17<11:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 139/400 [06:17<11:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 140/400 [06:20<11:37,  2.68s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 140/400 [06:20<11:37,  2.68s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 140/400 [06:20<11:37,  2.68s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 141/400 [06:23<11:35,  2.69s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 141/400 [06:23<11:35,  2.69s/it, v_num=1, train_loss_ste
+Epoch 142/400:  35%|▎| 141/400 [06:23<11:35,  2.69s/it, v_num=1, train_loss_ste
+Epoch 142/400:  36%|▎| 142/400 [06:26<11:36,  2.70s/it, v_num=1, train_loss_ste
+Epoch 142/400:  36%|▎| 142/400 [06:26<11:36,  2.70s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 142/400 [06:26<11:36,  2.70s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 143/400 [06:28<11:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 143/400 [06:28<11:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 143/400 [06:28<11:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 144/400 [06:31<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 144/400 [06:31<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 144/400 [06:31<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 145/400 [06:34<11:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 145/400 [06:34<11:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 145/400 [06:34<11:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 146/400 [06:36<11:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 146/400 [06:36<11:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 147/400:  36%|▎| 146/400 [06:36<11:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 147/400:  37%|▎| 147/400 [06:39<11:15,  2.67s/it, v_num=1, train_loss_ste
+Epoch 147/400:  37%|▎| 147/400 [06:39<11:15,  2.67s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 147/400 [06:39<11:15,  2.67s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 148/400 [06:42<11:10,  2.66s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 148/400 [06:42<11:10,  2.66s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 148/400 [06:42<11:10,  2.66s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 149/400 [06:44<11:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 149/400 [06:44<11:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 150/400:  37%|▎| 149/400 [06:44<11:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 150/400:  38%|▍| 150/400 [06:47<11:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 150/400:  38%|▍| 150/400 [06:47<11:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 150/400 [06:47<11:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 151/400 [06:50<11:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 151/400 [06:50<11:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 151/400 [06:50<11:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 152/400 [06:52<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 152/400 [06:52<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 152/400 [06:52<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 153/400 [06:55<11:00,  2.67s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 153/400 [06:55<11:00,  2.67s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 153/400 [06:55<11:00,  2.67s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 154/400 [06:58<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 154/400 [06:58<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 155/400:  38%|▍| 154/400 [06:58<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 155/400:  39%|▍| 155/400 [07:00<10:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 155/400:  39%|▍| 155/400 [07:00<10:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 155/400 [07:00<10:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 156/400 [07:03<10:51,  2.67s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 156/400 [07:03<10:51,  2.67s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 156/400 [07:03<10:51,  2.67s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 157/400 [07:06<10:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 157/400 [07:06<10:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 158/400:  39%|▍| 157/400 [07:06<10:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 158/400:  40%|▍| 158/400 [07:08<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 158/400:  40%|▍| 158/400 [07:08<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 158/400 [07:08<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 159/400 [07:11<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 159/400 [07:11<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 159/400 [07:11<10:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 160/400 [07:14<10:42,  2.68s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 160/400 [07:14<10:42,  2.68s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 160/400 [07:14<10:42,  2.68s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 161/400 [07:16<10:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 161/400 [07:16<10:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 161/400 [07:16<10:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 162/400 [07:19<10:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 162/400 [07:19<10:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 163/400:  40%|▍| 162/400 [07:19<10:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 163/400:  41%|▍| 163/400 [07:22<10:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 163/400:  41%|▍| 163/400 [07:22<10:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 163/400 [07:22<10:37,  2.69s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 164/400 [07:25<10:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 164/400 [07:25<10:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 164/400 [07:25<10:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 165/400 [07:27<10:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 165/400 [07:27<10:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 166/400:  41%|▍| 165/400 [07:27<10:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 166/400:  42%|▍| 166/400 [07:30<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 166/400:  42%|▍| 166/400 [07:30<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 166/400 [07:30<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 167/400 [07:33<10:25,  2.68s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 167/400 [07:33<10:25,  2.68s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 167/400 [07:33<10:25,  2.68s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 168/400 [07:35<10:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 168/400 [07:35<10:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 168/400 [07:35<10:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 169/400 [07:38<10:19,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 169/400 [07:38<10:19,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 169/400 [07:38<10:19,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 170/400 [07:41<10:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 170/400 [07:41<10:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 171/400:  42%|▍| 170/400 [07:41<10:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 171/400:  43%|▍| 171/400 [07:43<10:11,  2.67s/it, v_num=1, train_loss_ste
+Epoch 171/400:  43%|▍| 171/400 [07:43<10:11,  2.67s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 171/400 [07:43<10:11,  2.67s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 172/400 [07:46<10:07,  2.66s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 172/400 [07:46<10:07,  2.66s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 172/400 [07:46<10:07,  2.66s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 173/400 [07:49<10:04,  2.66s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 173/400 [07:49<10:04,  2.66s/it, v_num=1, train_loss_ste
+Epoch 174/400:  43%|▍| 173/400 [07:49<10:04,  2.66s/it, v_num=1, train_loss_ste
+Epoch 174/400:  44%|▍| 174/400 [07:51<10:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 174/400:  44%|▍| 174/400 [07:51<10:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 174/400 [07:51<10:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 175/400 [07:54<10:01,  2.68s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 175/400 [07:54<10:01,  2.68s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 175/400 [07:54<10:01,  2.68s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 176/400 [07:57<09:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 176/400 [07:57<09:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 176/400 [07:57<09:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 177/400 [07:59<09:55,  2.67s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 177/400 [07:59<09:55,  2.67s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 177/400 [07:59<09:55,  2.67s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 178/400 [08:02<09:54,  2.68s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 178/400 [08:02<09:54,  2.68s/it, v_num=1, train_loss_ste
+Epoch 179/400:  44%|▍| 178/400 [08:02<09:54,  2.68s/it, v_num=1, train_loss_ste
+Epoch 179/400:  45%|▍| 179/400 [08:05<09:52,  2.68s/it, v_num=1, train_loss_ste
+Epoch 179/400:  45%|▍| 179/400 [08:05<09:52,  2.68s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 179/400 [08:05<09:52,  2.68s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 180/400 [08:07<09:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 180/400 [08:07<09:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 180/400 [08:07<09:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 181/400 [08:10<09:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 181/400 [08:10<09:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 182/400:  45%|▍| 181/400 [08:10<09:49,  2.69s/it, v_num=1, train_loss_ste
+Epoch 182/400:  46%|▍| 182/400 [08:13<09:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 182/400:  46%|▍| 182/400 [08:13<09:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 182/400 [08:13<09:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 183/400 [08:15<09:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 183/400 [08:15<09:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 183/400 [08:15<09:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 184/400 [08:18<09:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 184/400 [08:18<09:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 184/400 [08:18<09:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 185/400 [08:21<09:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 185/400 [08:21<09:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 185/400 [08:21<09:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 186/400 [08:23<09:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 186/400 [08:23<09:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 187/400:  46%|▍| 186/400 [08:23<09:34,  2.69s/it, v_num=1, train_loss_ste
+Epoch 187/400:  47%|▍| 187/400 [08:26<09:32,  2.69s/it, v_num=1, train_loss_ste
+Epoch 187/400:  47%|▍| 187/400 [08:26<09:32,  2.69s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 187/400 [08:26<09:32,  2.69s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 188/400 [08:29<09:31,  2.70s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 188/400 [08:29<09:31,  2.70s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 188/400 [08:29<09:31,  2.70s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 189/400 [08:32<09:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 189/400 [08:32<09:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 190/400:  47%|▍| 189/400 [08:32<09:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 190/400:  48%|▍| 190/400 [08:34<09:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 190/400:  48%|▍| 190/400 [08:34<09:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 190/400 [08:34<09:27,  2.70s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 191/400 [08:37<09:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 191/400 [08:37<09:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 191/400 [08:37<09:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 192/400 [08:40<09:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 192/400 [08:40<09:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 192/400 [08:40<09:19,  2.69s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 193/400 [08:42<09:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 193/400 [08:42<09:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 193/400 [08:42<09:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 194/400 [08:45<09:16,  2.70s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 194/400 [08:45<09:16,  2.70s/it, v_num=1, train_loss_ste
+Epoch 195/400:  48%|▍| 194/400 [08:45<09:16,  2.70s/it, v_num=1, train_loss_ste
+Epoch 195/400:  49%|▍| 195/400 [08:48<09:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 195/400:  49%|▍| 195/400 [08:48<09:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 195/400 [08:48<09:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 196/400 [08:50<09:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 196/400 [08:50<09:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 196/400 [08:50<09:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 197/400 [08:53<09:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 197/400 [08:53<09:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 198/400:  49%|▍| 197/400 [08:53<09:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 198/400:  50%|▍| 198/400 [08:56<09:03,  2.69s/it, v_num=1, train_loss_ste
+Epoch 198/400:  50%|▍| 198/400 [08:56<09:03,  2.69s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 198/400 [08:56<09:03,  2.69s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 199/400 [08:58<09:01,  2.69s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 199/400 [08:58<09:01,  2.69s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▍| 199/400 [08:59<09:01,  2.69s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▌| 200/400 [09:01<08:58,  2.69s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▌| 200/400 [09:01<08:58,  2.69s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 200/400 [09:01<08:58,  2.69s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 201/400 [09:04<08:55,  2.69s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 201/400 [09:04<08:55,  2.69s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 201/400 [09:04<08:55,  2.69s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 202/400 [09:07<08:53,  2.69s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 202/400 [09:07<08:53,  2.69s/it, v_num=1, train_loss_ste
+Epoch 203/400:  50%|▌| 202/400 [09:07<08:53,  2.69s/it, v_num=1, train_loss_ste
+Epoch 203/400:  51%|▌| 203/400 [09:09<08:51,  2.70s/it, v_num=1, train_loss_ste
+Epoch 203/400:  51%|▌| 203/400 [09:09<08:51,  2.70s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 203/400 [09:09<08:51,  2.70s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 204/400 [09:12<08:49,  2.70s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 204/400 [09:12<08:49,  2.70s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 204/400 [09:12<08:49,  2.70s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 205/400 [09:15<08:46,  2.70s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 205/400 [09:15<08:46,  2.70s/it, v_num=1, train_loss_ste
+Epoch 206/400:  51%|▌| 205/400 [09:15<08:46,  2.70s/it, v_num=1, train_loss_ste
+Epoch 206/400:  52%|▌| 206/400 [09:17<08:44,  2.70s/it, v_num=1, train_loss_ste
+Epoch 206/400:  52%|▌| 206/400 [09:17<08:44,  2.70s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 206/400 [09:17<08:44,  2.70s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 207/400 [09:20<08:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 207/400 [09:20<08:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 207/400 [09:20<08:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 208/400 [09:23<08:38,  2.70s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 208/400 [09:23<08:38,  2.70s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 208/400 [09:23<08:38,  2.70s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 209/400 [09:25<08:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 209/400 [09:25<08:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 209/400 [09:26<08:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 210/400 [09:28<08:36,  2.72s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 210/400 [09:28<08:36,  2.72s/it, v_num=1, train_loss_ste
+Epoch 211/400:  52%|▌| 210/400 [09:28<08:36,  2.72s/it, v_num=1, train_loss_ste
+Epoch 211/400:  53%|▌| 211/400 [09:31<08:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 211/400:  53%|▌| 211/400 [09:31<08:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 211/400 [09:31<08:31,  2.71s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 212/400 [09:34<08:28,  2.71s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 212/400 [09:34<08:28,  2.71s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 212/400 [09:34<08:28,  2.71s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 213/400 [09:36<08:30,  2.73s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 213/400 [09:36<08:30,  2.73s/it, v_num=1, train_loss_ste
+Epoch 214/400:  53%|▌| 213/400 [09:36<08:30,  2.73s/it, v_num=1, train_loss_ste
+Epoch 214/400:  54%|▌| 214/400 [09:39<08:28,  2.73s/it, v_num=1, train_loss_ste
+Epoch 214/400:  54%|▌| 214/400 [09:39<08:28,  2.73s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 214/400 [09:39<08:28,  2.73s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 215/400 [09:42<08:26,  2.74s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 215/400 [09:42<08:26,  2.74s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 215/400 [09:42<08:26,  2.74s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 216/400 [09:45<08:27,  2.76s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 216/400 [09:45<08:27,  2.76s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 216/400 [09:45<08:27,  2.76s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 217/400 [09:47<08:20,  2.73s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 217/400 [09:47<08:20,  2.73s/it, v_num=1, train_loss_ste
+Epoch 218/400:  54%|▌| 217/400 [09:47<08:20,  2.73s/it, v_num=1, train_loss_ste
+Epoch 218/400:  55%|▌| 218/400 [09:50<08:12,  2.71s/it, v_num=1, train_loss_ste
+Epoch 218/400:  55%|▌| 218/400 [09:50<08:12,  2.71s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 218/400 [09:50<08:12,  2.71s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 219/400 [09:53<08:16,  2.75s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 219/400 [09:53<08:16,  2.75s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 219/400 [09:53<08:16,  2.75s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 220/400 [09:56<08:21,  2.79s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 220/400 [09:56<08:21,  2.79s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 220/400 [09:56<08:21,  2.79s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 221/400 [09:59<08:21,  2.80s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 221/400 [09:59<08:21,  2.80s/it, v_num=1, train_loss_ste
+Epoch 222/400:  55%|▌| 221/400 [09:59<08:21,  2.80s/it, v_num=1, train_loss_ste
+Epoch 222/400:  56%|▌| 222/400 [10:01<08:19,  2.81s/it, v_num=1, train_loss_ste
+Epoch 222/400:  56%|▌| 222/400 [10:01<08:19,  2.81s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 222/400 [10:01<08:19,  2.81s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 223/400 [10:04<08:19,  2.82s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 223/400 [10:04<08:19,  2.82s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 223/400 [10:04<08:19,  2.82s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 224/400 [10:07<08:20,  2.84s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 224/400 [10:07<08:20,  2.84s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 224/400 [10:07<08:20,  2.84s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 225/400 [10:10<08:18,  2.85s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 225/400 [10:10<08:18,  2.85s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 225/400 [10:10<08:18,  2.85s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 226/400 [10:13<08:15,  2.85s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 226/400 [10:13<08:15,  2.85s/it, v_num=1, train_loss_ste
+Epoch 227/400:  56%|▌| 226/400 [10:13<08:15,  2.85s/it, v_num=1, train_loss_ste
+Epoch 227/400:  57%|▌| 227/400 [10:16<08:15,  2.86s/it, v_num=1, train_loss_ste
+Epoch 227/400:  57%|▌| 227/400 [10:16<08:15,  2.86s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 227/400 [10:16<08:15,  2.86s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 228/400 [10:18<08:03,  2.81s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 228/400 [10:18<08:03,  2.81s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 228/400 [10:18<08:03,  2.81s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 229/400 [10:21<07:53,  2.77s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 229/400 [10:21<07:53,  2.77s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 229/400 [10:21<07:53,  2.77s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 230/400 [10:24<07:43,  2.73s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 230/400 [10:24<07:43,  2.73s/it, v_num=1, train_loss_ste
+Epoch 231/400:  57%|▌| 230/400 [10:24<07:43,  2.73s/it, v_num=1, train_loss_ste
+Epoch 231/400:  58%|▌| 231/400 [10:27<07:42,  2.73s/it, v_num=1, train_loss_ste
+Epoch 231/400:  58%|▌| 231/400 [10:27<07:42,  2.73s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 231/400 [10:27<07:42,  2.73s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 232/400 [10:29<07:43,  2.76s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 232/400 [10:29<07:43,  2.76s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 232/400 [10:29<07:43,  2.76s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 233/400 [10:32<07:39,  2.75s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 233/400 [10:32<07:39,  2.75s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 233/400 [10:32<07:39,  2.75s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 234/400 [10:35<07:36,  2.75s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 234/400 [10:35<07:36,  2.75s/it, v_num=1, train_loss_ste
+Epoch 235/400:  58%|▌| 234/400 [10:35<07:36,  2.75s/it, v_num=1, train_loss_ste
+Epoch 235/400:  59%|▌| 235/400 [10:38<07:36,  2.77s/it, v_num=1, train_loss_ste
+Epoch 235/400:  59%|▌| 235/400 [10:38<07:36,  2.77s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 235/400 [10:38<07:36,  2.77s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 236/400 [10:40<07:29,  2.74s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 236/400 [10:40<07:29,  2.74s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 236/400 [10:40<07:29,  2.74s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 237/400 [10:43<07:30,  2.76s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 237/400 [10:43<07:30,  2.76s/it, v_num=1, train_loss_ste
+Epoch 238/400:  59%|▌| 237/400 [10:43<07:30,  2.76s/it, v_num=1, train_loss_ste
+Epoch 238/400:  60%|▌| 238/400 [10:46<07:24,  2.75s/it, v_num=1, train_loss_ste
+Epoch 238/400:  60%|▌| 238/400 [10:46<07:24,  2.75s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 238/400 [10:46<07:24,  2.75s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 239/400 [10:49<07:20,  2.74s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 239/400 [10:49<07:20,  2.74s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 239/400 [10:49<07:20,  2.74s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 240/400 [10:51<07:18,  2.74s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 240/400 [10:51<07:18,  2.74s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 240/400 [10:51<07:18,  2.74s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 241/400 [10:54<07:13,  2.73s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 241/400 [10:54<07:13,  2.73s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 241/400 [10:54<07:13,  2.73s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 242/400 [10:57<07:09,  2.72s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 242/400 [10:57<07:09,  2.72s/it, v_num=1, train_loss_ste
+Epoch 243/400:  60%|▌| 242/400 [10:57<07:09,  2.72s/it, v_num=1, train_loss_ste
+Epoch 243/400:  61%|▌| 243/400 [10:59<07:06,  2.71s/it, v_num=1, train_loss_ste
+Epoch 243/400:  61%|▌| 243/400 [10:59<07:06,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 243/400 [10:59<07:06,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 244/400 [11:02<07:02,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 244/400 [11:02<07:02,  2.71s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 244/400 [11:02<07:02,  2.71s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 245/400 [11:05<06:58,  2.70s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 245/400 [11:05<06:58,  2.70s/it, v_num=1, train_loss_ste
+Epoch 246/400:  61%|▌| 245/400 [11:05<06:58,  2.70s/it, v_num=1, train_loss_ste
+Epoch 246/400:  62%|▌| 246/400 [11:08<07:00,  2.73s/it, v_num=1, train_loss_ste
+Epoch 246/400:  62%|▌| 246/400 [11:08<07:00,  2.73s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 246/400 [11:08<07:00,  2.73s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 247/400 [11:10<06:58,  2.74s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 247/400 [11:10<06:58,  2.74s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 247/400 [11:10<06:58,  2.74s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 248/400 [11:13<06:55,  2.73s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 248/400 [11:13<06:55,  2.73s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 248/400 [11:13<06:55,  2.73s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 249/400 [11:16<06:50,  2.72s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 249/400 [11:16<06:50,  2.72s/it, v_num=1, train_loss_ste
+Epoch 250/400:  62%|▌| 249/400 [11:16<06:50,  2.72s/it, v_num=1, train_loss_ste
+Epoch 250/400:  62%|▋| 250/400 [11:18<06:47,  2.72s/it, v_num=1, train_loss_ste
+Epoch 250/400:  62%|▋| 250/400 [11:18<06:47,  2.72s/it, v_num=1, train_loss_ste
+Epoch 251/400:  62%|▋| 250/400 [11:18<06:47,  2.72s/it, v_num=1, train_loss_ste
+Epoch 251/400:  63%|▋| 251/400 [11:21<06:49,  2.75s/it, v_num=1, train_loss_ste
+Epoch 251/400:  63%|▋| 251/400 [11:21<06:49,  2.75s/it, v_num=1, train_loss_ste
+Epoch 252/400:  63%|▋| 251/400 [11:21<06:49,  2.75s/it, v_num=1, train_loss_ste
+Epoch 252/400:  63%|▋| 252/400 [11:24<06:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 252/400:  63%|▋| 252/400 [11:24<06:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 253/400:  63%|▋| 252/400 [11:24<06:50,  2.77s/it, v_num=1, train_loss_ste
+Epoch 253/400:  63%|▋| 253/400 [11:27<06:53,  2.82s/it, v_num=1, train_loss_ste
+Epoch 253/400:  63%|▋| 253/400 [11:27<06:53,  2.82s/it, v_num=1, train_loss_ste
+Epoch 254/400:  63%|▋| 253/400 [11:27<06:53,  2.82s/it, v_num=1, train_loss_ste
+Epoch 254/400:  64%|▋| 254/400 [11:30<06:53,  2.83s/it, v_num=1, train_loss_ste
+Epoch 254/400:  64%|▋| 254/400 [11:30<06:53,  2.83s/it, v_num=1, train_loss_ste
+Epoch 255/400:  64%|▋| 254/400 [11:30<06:53,  2.83s/it, v_num=1, train_loss_ste
+Epoch 255/400:  64%|▋| 255/400 [11:33<06:46,  2.80s/it, v_num=1, train_loss_ste
+Epoch 255/400:  64%|▋| 255/400 [11:33<06:46,  2.80s/it, v_num=1, train_loss_ste
+Epoch 256/400:  64%|▋| 255/400 [11:33<06:46,  2.80s/it, v_num=1, train_loss_ste
+Epoch 256/400:  64%|▋| 256/400 [11:35<06:39,  2.78s/it, v_num=1, train_loss_ste
+Epoch 256/400:  64%|▋| 256/400 [11:35<06:39,  2.78s/it, v_num=1, train_loss_ste
+Epoch 257/400:  64%|▋| 256/400 [11:35<06:39,  2.78s/it, v_num=1, train_loss_ste
+Epoch 257/400:  64%|▋| 257/400 [11:38<06:34,  2.76s/it, v_num=1, train_loss_ste
+Epoch 257/400:  64%|▋| 257/400 [11:38<06:34,  2.76s/it, v_num=1, train_loss_ste
+Epoch 258/400:  64%|▋| 257/400 [11:38<06:34,  2.76s/it, v_num=1, train_loss_ste
+Epoch 258/400:  64%|▋| 258/400 [11:41<06:30,  2.75s/it, v_num=1, train_loss_ste
+Epoch 258/400:  64%|▋| 258/400 [11:41<06:30,  2.75s/it, v_num=1, train_loss_ste
+Epoch 259/400:  64%|▋| 258/400 [11:41<06:30,  2.75s/it, v_num=1, train_loss_ste
+Epoch 259/400:  65%|▋| 259/400 [11:43<06:25,  2.74s/it, v_num=1, train_loss_ste
+Epoch 259/400:  65%|▋| 259/400 [11:43<06:25,  2.74s/it, v_num=1, train_loss_ste
+Epoch 260/400:  65%|▋| 259/400 [11:43<06:25,  2.74s/it, v_num=1, train_loss_ste
+Epoch 260/400:  65%|▋| 260/400 [11:46<06:21,  2.73s/it, v_num=1, train_loss_ste
+Epoch 260/400:  65%|▋| 260/400 [11:46<06:21,  2.73s/it, v_num=1, train_loss_ste
+Epoch 261/400:  65%|▋| 260/400 [11:46<06:21,  2.73s/it, v_num=1, train_loss_ste
+Epoch 261/400:  65%|▋| 261/400 [11:49<06:16,  2.71s/it, v_num=1, train_loss_ste
+Epoch 261/400:  65%|▋| 261/400 [11:49<06:16,  2.71s/it, v_num=1, train_loss_ste
+Epoch 262/400:  65%|▋| 261/400 [11:49<06:16,  2.71s/it, v_num=1, train_loss_ste
+Epoch 262/400:  66%|▋| 262/400 [11:52<06:16,  2.73s/it, v_num=1, train_loss_ste
+Epoch 262/400:  66%|▋| 262/400 [11:52<06:16,  2.73s/it, v_num=1, train_loss_ste
+Epoch 263/400:  66%|▋| 262/400 [11:52<06:16,  2.73s/it, v_num=1, train_loss_ste
+Epoch 263/400:  66%|▋| 263/400 [11:54<06:17,  2.75s/it, v_num=1, train_loss_ste
+Epoch 263/400:  66%|▋| 263/400 [11:54<06:17,  2.75s/it, v_num=1, train_loss_ste
+Epoch 264/400:  66%|▋| 263/400 [11:54<06:17,  2.75s/it, v_num=1, train_loss_ste
+Epoch 264/400:  66%|▋| 264/400 [11:57<06:17,  2.78s/it, v_num=1, train_loss_ste
+Epoch 264/400:  66%|▋| 264/400 [11:57<06:17,  2.78s/it, v_num=1, train_loss_ste
+Epoch 265/400:  66%|▋| 264/400 [11:57<06:17,  2.78s/it, v_num=1, train_loss_ste
+Epoch 265/400:  66%|▋| 265/400 [12:00<06:15,  2.78s/it, v_num=1, train_loss_ste
+Epoch 265/400:  66%|▋| 265/400 [12:00<06:15,  2.78s/it, v_num=1, train_loss_ste
+Epoch 266/400:  66%|▋| 265/400 [12:00<06:15,  2.78s/it, v_num=1, train_loss_ste
+Epoch 266/400:  66%|▋| 266/400 [12:03<06:09,  2.75s/it, v_num=1, train_loss_ste
+Epoch 266/400:  66%|▋| 266/400 [12:03<06:09,  2.75s/it, v_num=1, train_loss_ste
+Epoch 267/400:  66%|▋| 266/400 [12:03<06:09,  2.75s/it, v_num=1, train_loss_ste
+Epoch 267/400:  67%|▋| 267/400 [12:05<06:04,  2.74s/it, v_num=1, train_loss_ste
+Epoch 267/400:  67%|▋| 267/400 [12:05<06:04,  2.74s/it, v_num=1, train_loss_ste
+Epoch 268/400:  67%|▋| 267/400 [12:05<06:04,  2.74s/it, v_num=1, train_loss_ste
+Epoch 268/400:  67%|▋| 268/400 [12:08<06:02,  2.74s/it, v_num=1, train_loss_ste
+Epoch 268/400:  67%|▋| 268/400 [12:08<06:02,  2.74s/it, v_num=1, train_loss_ste
+Epoch 269/400:  67%|▋| 268/400 [12:08<06:02,  2.74s/it, v_num=1, train_loss_ste
+Epoch 269/400:  67%|▋| 269/400 [12:11<05:56,  2.72s/it, v_num=1, train_loss_ste
+Epoch 269/400:  67%|▋| 269/400 [12:11<05:56,  2.72s/it, v_num=1, train_loss_ste
+Epoch 270/400:  67%|▋| 269/400 [12:11<05:56,  2.72s/it, v_num=1, train_loss_ste
+Epoch 270/400:  68%|▋| 270/400 [12:14<05:54,  2.73s/it, v_num=1, train_loss_ste
+Epoch 270/400:  68%|▋| 270/400 [12:14<05:54,  2.73s/it, v_num=1, train_loss_ste
+Epoch 271/400:  68%|▋| 270/400 [12:14<05:54,  2.73s/it, v_num=1, train_loss_ste
+Epoch 271/400:  68%|▋| 271/400 [12:16<05:51,  2.72s/it, v_num=1, train_loss_ste
+Epoch 271/400:  68%|▋| 271/400 [12:16<05:51,  2.72s/it, v_num=1, train_loss_ste
+Epoch 272/400:  68%|▋| 271/400 [12:16<05:51,  2.72s/it, v_num=1, train_loss_ste
+Epoch 272/400:  68%|▋| 272/400 [12:19<05:48,  2.72s/it, v_num=1, train_loss_ste
+Epoch 272/400:  68%|▋| 272/400 [12:19<05:48,  2.72s/it, v_num=1, train_loss_ste
+Epoch 273/400:  68%|▋| 272/400 [12:19<05:48,  2.72s/it, v_num=1, train_loss_ste
+Epoch 273/400:  68%|▋| 273/400 [12:22<05:44,  2.71s/it, v_num=1, train_loss_ste
+Epoch 273/400:  68%|▋| 273/400 [12:22<05:44,  2.71s/it, v_num=1, train_loss_ste
+Epoch 274/400:  68%|▋| 273/400 [12:22<05:44,  2.71s/it, v_num=1, train_loss_ste
+Epoch 274/400:  68%|▋| 274/400 [12:24<05:39,  2.70s/it, v_num=1, train_loss_ste
+Epoch 274/400:  68%|▋| 274/400 [12:24<05:39,  2.70s/it, v_num=1, train_loss_ste
+Epoch 275/400:  68%|▋| 274/400 [12:24<05:39,  2.70s/it, v_num=1, train_loss_ste
+Epoch 275/400:  69%|▋| 275/400 [12:27<05:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 275/400:  69%|▋| 275/400 [12:27<05:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 276/400:  69%|▋| 275/400 [12:27<05:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 276/400:  69%|▋| 276/400 [12:30<05:33,  2.69s/it, v_num=1, train_loss_ste
+Epoch 276/400:  69%|▋| 276/400 [12:30<05:33,  2.69s/it, v_num=1, train_loss_ste
+Epoch 277/400:  69%|▋| 276/400 [12:30<05:33,  2.69s/it, v_num=1, train_loss_ste
+Epoch 277/400:  69%|▋| 277/400 [12:32<05:30,  2.69s/it, v_num=1, train_loss_ste
+Epoch 277/400:  69%|▋| 277/400 [12:32<05:30,  2.69s/it, v_num=1, train_loss_ste
+Epoch 278/400:  69%|▋| 277/400 [12:32<05:30,  2.69s/it, v_num=1, train_loss_ste
+Epoch 278/400:  70%|▋| 278/400 [12:35<05:27,  2.69s/it, v_num=1, train_loss_ste
+Epoch 278/400:  70%|▋| 278/400 [12:35<05:27,  2.69s/it, v_num=1, train_loss_ste
+Epoch 279/400:  70%|▋| 278/400 [12:35<05:27,  2.69s/it, v_num=1, train_loss_ste
+Epoch 279/400:  70%|▋| 279/400 [12:38<05:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 279/400:  70%|▋| 279/400 [12:38<05:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 280/400:  70%|▋| 279/400 [12:38<05:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 280/400:  70%|▋| 280/400 [12:41<05:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 280/400:  70%|▋| 280/400 [12:41<05:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 281/400:  70%|▋| 280/400 [12:41<05:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 281/400:  70%|▋| 281/400 [12:43<05:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 281/400:  70%|▋| 281/400 [12:43<05:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 282/400:  70%|▋| 281/400 [12:43<05:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 282/400:  70%|▋| 282/400 [12:46<05:18,  2.70s/it, v_num=1, train_loss_ste
+Epoch 282/400:  70%|▋| 282/400 [12:46<05:18,  2.70s/it, v_num=1, train_loss_ste
+Epoch 283/400:  70%|▋| 282/400 [12:46<05:18,  2.70s/it, v_num=1, train_loss_ste
+Epoch 283/400:  71%|▋| 283/400 [12:49<05:15,  2.70s/it, v_num=1, train_loss_ste
+Epoch 283/400:  71%|▋| 283/400 [12:49<05:15,  2.70s/it, v_num=1, train_loss_ste
+Epoch 284/400:  71%|▋| 283/400 [12:49<05:15,  2.70s/it, v_num=1, train_loss_ste
+Epoch 284/400:  71%|▋| 284/400 [12:51<05:12,  2.70s/it, v_num=1, train_loss_ste
+Epoch 284/400:  71%|▋| 284/400 [12:51<05:12,  2.70s/it, v_num=1, train_loss_ste
+Epoch 285/400:  71%|▋| 284/400 [12:51<05:12,  2.70s/it, v_num=1, train_loss_ste
+Epoch 285/400:  71%|▋| 285/400 [12:54<05:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 285/400:  71%|▋| 285/400 [12:54<05:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 286/400:  71%|▋| 285/400 [12:54<05:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 286/400:  72%|▋| 286/400 [12:57<05:04,  2.67s/it, v_num=1, train_loss_ste
+Epoch 286/400:  72%|▋| 286/400 [12:57<05:04,  2.67s/it, v_num=1, train_loss_ste
+Epoch 287/400:  72%|▋| 286/400 [12:57<05:04,  2.67s/it, v_num=1, train_loss_ste
+Epoch 287/400:  72%|▋| 287/400 [12:59<05:00,  2.66s/it, v_num=1, train_loss_ste
+Epoch 287/400:  72%|▋| 287/400 [12:59<05:00,  2.66s/it, v_num=1, train_loss_ste
+Epoch 288/400:  72%|▋| 287/400 [12:59<05:00,  2.66s/it, v_num=1, train_loss_ste
+Epoch 288/400:  72%|▋| 288/400 [13:02<04:56,  2.65s/it, v_num=1, train_loss_ste
+Epoch 288/400:  72%|▋| 288/400 [13:02<04:56,  2.65s/it, v_num=1, train_loss_ste
+Epoch 289/400:  72%|▋| 288/400 [13:02<04:56,  2.65s/it, v_num=1, train_loss_ste
+Epoch 289/400:  72%|▋| 289/400 [13:05<04:54,  2.65s/it, v_num=1, train_loss_ste
+Epoch 289/400:  72%|▋| 289/400 [13:05<04:54,  2.65s/it, v_num=1, train_loss_ste
+Epoch 290/400:  72%|▋| 289/400 [13:05<04:54,  2.65s/it, v_num=1, train_loss_ste
+Epoch 290/400:  72%|▋| 290/400 [13:07<04:50,  2.64s/it, v_num=1, train_loss_ste
+Epoch 290/400:  72%|▋| 290/400 [13:07<04:50,  2.64s/it, v_num=1, train_loss_ste
+Epoch 291/400:  72%|▋| 290/400 [13:07<04:50,  2.64s/it, v_num=1, train_loss_ste
+Epoch 291/400:  73%|▋| 291/400 [13:10<04:50,  2.66s/it, v_num=1, train_loss_ste
+Epoch 291/400:  73%|▋| 291/400 [13:10<04:50,  2.66s/it, v_num=1, train_loss_ste
+Epoch 292/400:  73%|▋| 291/400 [13:10<04:50,  2.66s/it, v_num=1, train_loss_ste
+Epoch 292/400:  73%|▋| 292/400 [13:13<04:46,  2.65s/it, v_num=1, train_loss_ste
+Epoch 292/400:  73%|▋| 292/400 [13:13<04:46,  2.65s/it, v_num=1, train_loss_ste
+Epoch 293/400:  73%|▋| 292/400 [13:13<04:46,  2.65s/it, v_num=1, train_loss_ste
+Epoch 293/400:  73%|▋| 293/400 [13:15<04:43,  2.65s/it, v_num=1, train_loss_ste
+Epoch 293/400:  73%|▋| 293/400 [13:15<04:43,  2.65s/it, v_num=1, train_loss_ste
+Epoch 294/400:  73%|▋| 293/400 [13:15<04:43,  2.65s/it, v_num=1, train_loss_ste
+Epoch 294/400:  74%|▋| 294/400 [13:18<04:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 294/400:  74%|▋| 294/400 [13:18<04:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 295/400:  74%|▋| 294/400 [13:18<04:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 295/400:  74%|▋| 295/400 [13:21<04:40,  2.67s/it, v_num=1, train_loss_ste
+Epoch 295/400:  74%|▋| 295/400 [13:21<04:40,  2.67s/it, v_num=1, train_loss_ste
+Epoch 296/400:  74%|▋| 295/400 [13:21<04:40,  2.67s/it, v_num=1, train_loss_ste
+Epoch 296/400:  74%|▋| 296/400 [13:23<04:38,  2.68s/it, v_num=1, train_loss_ste
+Epoch 296/400:  74%|▋| 296/400 [13:23<04:38,  2.68s/it, v_num=1, train_loss_ste
+Epoch 297/400:  74%|▋| 296/400 [13:23<04:38,  2.68s/it, v_num=1, train_loss_ste
+Epoch 297/400:  74%|▋| 297/400 [13:26<04:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 297/400:  74%|▋| 297/400 [13:26<04:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 298/400:  74%|▋| 297/400 [13:26<04:35,  2.68s/it, v_num=1, train_loss_ste
+Epoch 298/400:  74%|▋| 298/400 [13:29<04:32,  2.67s/it, v_num=1, train_loss_ste
+Epoch 298/400:  74%|▋| 298/400 [13:29<04:32,  2.67s/it, v_num=1, train_loss_ste
+Epoch 299/400:  74%|▋| 298/400 [13:29<04:32,  2.67s/it, v_num=1, train_loss_ste
+Epoch 299/400:  75%|▋| 299/400 [13:31<04:30,  2.67s/it, v_num=1, train_loss_ste
+Epoch 299/400:  75%|▋| 299/400 [13:31<04:30,  2.67s/it, v_num=1, train_loss_ste
+Epoch 300/400:  75%|▋| 299/400 [13:31<04:30,  2.67s/it, v_num=1, train_loss_ste
+Epoch 300/400:  75%|▊| 300/400 [13:34<04:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 300/400:  75%|▊| 300/400 [13:34<04:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 301/400:  75%|▊| 300/400 [13:34<04:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 301/400:  75%|▊| 301/400 [13:37<04:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 301/400:  75%|▊| 301/400 [13:37<04:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 302/400:  75%|▊| 301/400 [13:37<04:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 302/400:  76%|▊| 302/400 [13:39<04:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 302/400:  76%|▊| 302/400 [13:39<04:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 303/400:  76%|▊| 302/400 [13:39<04:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 303/400:  76%|▊| 303/400 [13:42<04:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 303/400:  76%|▊| 303/400 [13:42<04:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 304/400:  76%|▊| 303/400 [13:42<04:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 304/400:  76%|▊| 304/400 [13:44<04:14,  2.65s/it, v_num=1, train_loss_ste
+Epoch 304/400:  76%|▊| 304/400 [13:44<04:14,  2.65s/it, v_num=1, train_loss_ste
+Epoch 305/400:  76%|▊| 304/400 [13:44<04:14,  2.65s/it, v_num=1, train_loss_ste
+Epoch 305/400:  76%|▊| 305/400 [13:47<04:13,  2.66s/it, v_num=1, train_loss_ste
+Epoch 305/400:  76%|▊| 305/400 [13:47<04:13,  2.66s/it, v_num=1, train_loss_ste
+Epoch 306/400:  76%|▊| 305/400 [13:47<04:13,  2.66s/it, v_num=1, train_loss_ste
+Epoch 306/400:  76%|▊| 306/400 [13:50<04:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 306/400:  76%|▊| 306/400 [13:50<04:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 307/400:  76%|▊| 306/400 [13:50<04:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 307/400:  77%|▊| 307/400 [13:53<04:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 307/400:  77%|▊| 307/400 [13:53<04:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 308/400:  77%|▊| 307/400 [13:53<04:09,  2.69s/it, v_num=1, train_loss_ste
+Epoch 308/400:  77%|▊| 308/400 [13:55<04:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 308/400:  77%|▊| 308/400 [13:55<04:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 309/400:  77%|▊| 308/400 [13:55<04:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 309/400:  77%|▊| 309/400 [13:58<04:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 309/400:  77%|▊| 309/400 [13:58<04:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 310/400:  77%|▊| 309/400 [13:58<04:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 310/400:  78%|▊| 310/400 [14:01<04:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 310/400:  78%|▊| 310/400 [14:01<04:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 311/400:  78%|▊| 310/400 [14:01<04:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 311/400:  78%|▊| 311/400 [14:03<03:59,  2.69s/it, v_num=1, train_loss_ste
+Epoch 311/400:  78%|▊| 311/400 [14:03<03:59,  2.69s/it, v_num=1, train_loss_ste
+Epoch 312/400:  78%|▊| 311/400 [14:03<03:59,  2.69s/it, v_num=1, train_loss_ste
+Epoch 312/400:  78%|▊| 312/400 [14:06<03:56,  2.69s/it, v_num=1, train_loss_ste
+Epoch 312/400:  78%|▊| 312/400 [14:06<03:56,  2.69s/it, v_num=1, train_loss_ste
+Epoch 313/400:  78%|▊| 312/400 [14:06<03:56,  2.69s/it, v_num=1, train_loss_ste
+Epoch 313/400:  78%|▊| 313/400 [14:09<03:54,  2.70s/it, v_num=1, train_loss_ste
+Epoch 313/400:  78%|▊| 313/400 [14:09<03:54,  2.70s/it, v_num=1, train_loss_ste
+Epoch 314/400:  78%|▊| 313/400 [14:09<03:54,  2.70s/it, v_num=1, train_loss_ste
+Epoch 314/400:  78%|▊| 314/400 [14:11<03:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 314/400:  78%|▊| 314/400 [14:11<03:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 315/400:  78%|▊| 314/400 [14:11<03:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 315/400:  79%|▊| 315/400 [14:14<03:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 315/400:  79%|▊| 315/400 [14:14<03:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 316/400:  79%|▊| 315/400 [14:14<03:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 316/400:  79%|▊| 316/400 [14:17<03:45,  2.68s/it, v_num=1, train_loss_ste
+Epoch 316/400:  79%|▊| 316/400 [14:17<03:45,  2.68s/it, v_num=1, train_loss_ste
+Epoch 317/400:  79%|▊| 316/400 [14:17<03:45,  2.68s/it, v_num=1, train_loss_ste
+Epoch 317/400:  79%|▊| 317/400 [14:19<03:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 317/400:  79%|▊| 317/400 [14:19<03:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 318/400:  79%|▊| 317/400 [14:19<03:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 318/400:  80%|▊| 318/400 [14:22<03:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 318/400:  80%|▊| 318/400 [14:22<03:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 319/400:  80%|▊| 318/400 [14:22<03:41,  2.70s/it, v_num=1, train_loss_ste
+Epoch 319/400:  80%|▊| 319/400 [14:25<03:38,  2.69s/it, v_num=1, train_loss_ste
+Epoch 319/400:  80%|▊| 319/400 [14:25<03:38,  2.69s/it, v_num=1, train_loss_ste
+Epoch 320/400:  80%|▊| 319/400 [14:25<03:38,  2.69s/it, v_num=1, train_loss_ste
+Epoch 320/400:  80%|▊| 320/400 [14:28<03:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 320/400:  80%|▊| 320/400 [14:28<03:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 321/400:  80%|▊| 320/400 [14:28<03:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 321/400:  80%|▊| 321/400 [14:30<03:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 321/400:  80%|▊| 321/400 [14:30<03:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 322/400:  80%|▊| 321/400 [14:30<03:33,  2.70s/it, v_num=1, train_loss_ste
+Epoch 322/400:  80%|▊| 322/400 [14:33<03:28,  2.68s/it, v_num=1, train_loss_ste
+Epoch 322/400:  80%|▊| 322/400 [14:33<03:28,  2.68s/it, v_num=1, train_loss_ste
+Epoch 323/400:  80%|▊| 322/400 [14:33<03:28,  2.68s/it, v_num=1, train_loss_ste
+Epoch 323/400:  81%|▊| 323/400 [14:36<03:25,  2.67s/it, v_num=1, train_loss_ste
+Epoch 323/400:  81%|▊| 323/400 [14:36<03:25,  2.67s/it, v_num=1, train_loss_ste
+Epoch 324/400:  81%|▊| 323/400 [14:36<03:25,  2.67s/it, v_num=1, train_loss_ste
+Epoch 324/400:  81%|▊| 324/400 [14:38<03:22,  2.67s/it, v_num=1, train_loss_ste
+Epoch 324/400:  81%|▊| 324/400 [14:38<03:22,  2.67s/it, v_num=1, train_loss_ste
+Epoch 325/400:  81%|▊| 324/400 [14:38<03:22,  2.67s/it, v_num=1, train_loss_ste
+Epoch 325/400:  81%|▊| 325/400 [14:41<03:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 325/400:  81%|▊| 325/400 [14:41<03:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 326/400:  81%|▊| 325/400 [14:41<03:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 326/400:  82%|▊| 326/400 [14:44<03:19,  2.70s/it, v_num=1, train_loss_ste
+Epoch 326/400:  82%|▊| 326/400 [14:44<03:19,  2.70s/it, v_num=1, train_loss_ste
+Epoch 327/400:  82%|▊| 326/400 [14:44<03:19,  2.70s/it, v_num=1, train_loss_ste
+Epoch 327/400:  82%|▊| 327/400 [14:46<03:16,  2.69s/it, v_num=1, train_loss_ste
+Epoch 327/400:  82%|▊| 327/400 [14:46<03:16,  2.69s/it, v_num=1, train_loss_ste
+Epoch 328/400:  82%|▊| 327/400 [14:46<03:16,  2.69s/it, v_num=1, train_loss_ste
+Epoch 328/400:  82%|▊| 328/400 [14:49<03:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 328/400:  82%|▊| 328/400 [14:49<03:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 329/400:  82%|▊| 328/400 [14:49<03:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 329/400:  82%|▊| 329/400 [14:52<03:10,  2.68s/it, v_num=1, train_loss_ste
+Epoch 329/400:  82%|▊| 329/400 [14:52<03:10,  2.68s/it, v_num=1, train_loss_ste
+Epoch 330/400:  82%|▊| 329/400 [14:52<03:10,  2.68s/it, v_num=1, train_loss_ste
+Epoch 330/400:  82%|▊| 330/400 [14:54<03:06,  2.66s/it, v_num=1, train_loss_ste
+Epoch 330/400:  82%|▊| 330/400 [14:54<03:06,  2.66s/it, v_num=1, train_loss_ste
+Epoch 331/400:  82%|▊| 330/400 [14:54<03:06,  2.66s/it, v_num=1, train_loss_ste
+Epoch 331/400:  83%|▊| 331/400 [14:57<03:03,  2.66s/it, v_num=1, train_loss_ste
+Epoch 331/400:  83%|▊| 331/400 [14:57<03:03,  2.66s/it, v_num=1, train_loss_ste
+Epoch 332/400:  83%|▊| 331/400 [14:57<03:03,  2.66s/it, v_num=1, train_loss_ste
+Epoch 332/400:  83%|▊| 332/400 [15:00<03:01,  2.67s/it, v_num=1, train_loss_ste
+Epoch 332/400:  83%|▊| 332/400 [15:00<03:01,  2.67s/it, v_num=1, train_loss_ste
+Epoch 333/400:  83%|▊| 332/400 [15:00<03:01,  2.67s/it, v_num=1, train_loss_ste
+Epoch 333/400:  83%|▊| 333/400 [15:02<02:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 333/400:  83%|▊| 333/400 [15:02<02:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 334/400:  83%|▊| 333/400 [15:02<02:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 334/400:  84%|▊| 334/400 [15:05<02:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 334/400:  84%|▊| 334/400 [15:05<02:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 335/400:  84%|▊| 334/400 [15:05<02:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 335/400:  84%|▊| 335/400 [15:08<02:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 335/400:  84%|▊| 335/400 [15:08<02:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 336/400:  84%|▊| 335/400 [15:08<02:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 336/400:  84%|▊| 336/400 [15:10<02:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 336/400:  84%|▊| 336/400 [15:10<02:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 337/400:  84%|▊| 336/400 [15:10<02:51,  2.68s/it, v_num=1, train_loss_ste
+Epoch 337/400:  84%|▊| 337/400 [15:13<02:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 337/400:  84%|▊| 337/400 [15:13<02:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 338/400:  84%|▊| 337/400 [15:13<02:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 338/400:  84%|▊| 338/400 [15:16<02:46,  2.68s/it, v_num=1, train_loss_ste
+Epoch 338/400:  84%|▊| 338/400 [15:16<02:46,  2.68s/it, v_num=1, train_loss_ste
+Epoch 339/400:  84%|▊| 338/400 [15:16<02:46,  2.68s/it, v_num=1, train_loss_ste
+Epoch 339/400:  85%|▊| 339/400 [15:18<02:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 339/400:  85%|▊| 339/400 [15:18<02:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 340/400:  85%|▊| 339/400 [15:18<02:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 340/400:  85%|▊| 340/400 [15:21<02:38,  2.64s/it, v_num=1, train_loss_ste
+Epoch 340/400:  85%|▊| 340/400 [15:21<02:38,  2.64s/it, v_num=1, train_loss_ste
+Epoch 341/400:  85%|▊| 340/400 [15:21<02:38,  2.64s/it, v_num=1, train_loss_ste
+Epoch 341/400:  85%|▊| 341/400 [15:24<02:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 341/400:  85%|▊| 341/400 [15:24<02:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 342/400:  85%|▊| 341/400 [15:24<02:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 342/400:  86%|▊| 342/400 [15:26<02:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 342/400:  86%|▊| 342/400 [15:26<02:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 343/400:  86%|▊| 342/400 [15:26<02:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 343/400:  86%|▊| 343/400 [15:29<02:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 343/400:  86%|▊| 343/400 [15:29<02:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 344/400:  86%|▊| 343/400 [15:29<02:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 344/400:  86%|▊| 344/400 [15:31<02:27,  2.63s/it, v_num=1, train_loss_ste
+Epoch 344/400:  86%|▊| 344/400 [15:31<02:27,  2.63s/it, v_num=1, train_loss_ste
+Epoch 345/400:  86%|▊| 344/400 [15:31<02:27,  2.63s/it, v_num=1, train_loss_ste
+Epoch 345/400:  86%|▊| 345/400 [15:34<02:25,  2.64s/it, v_num=1, train_loss_ste
+Epoch 345/400:  86%|▊| 345/400 [15:34<02:25,  2.64s/it, v_num=1, train_loss_ste
+Epoch 346/400:  86%|▊| 345/400 [15:34<02:25,  2.64s/it, v_num=1, train_loss_ste
+Epoch 346/400:  86%|▊| 346/400 [15:37<02:23,  2.65s/it, v_num=1, train_loss_ste
+Epoch 346/400:  86%|▊| 346/400 [15:37<02:23,  2.65s/it, v_num=1, train_loss_ste
+Epoch 347/400:  86%|▊| 346/400 [15:37<02:23,  2.65s/it, v_num=1, train_loss_ste
+Epoch 347/400:  87%|▊| 347/400 [15:39<02:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 347/400:  87%|▊| 347/400 [15:39<02:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 348/400:  87%|▊| 347/400 [15:39<02:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 348/400:  87%|▊| 348/400 [15:42<02:18,  2.66s/it, v_num=1, train_loss_ste
+Epoch 348/400:  87%|▊| 348/400 [15:42<02:18,  2.66s/it, v_num=1, train_loss_ste
+Epoch 349/400:  87%|▊| 348/400 [15:42<02:18,  2.66s/it, v_num=1, train_loss_ste
+Epoch 349/400:  87%|▊| 349/400 [15:45<02:16,  2.67s/it, v_num=1, train_loss_ste
+Epoch 349/400:  87%|▊| 349/400 [15:45<02:16,  2.67s/it, v_num=1, train_loss_ste
+Epoch 350/400:  87%|▊| 349/400 [15:45<02:16,  2.67s/it, v_num=1, train_loss_ste
+Epoch 350/400:  88%|▉| 350/400 [15:47<02:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 350/400:  88%|▉| 350/400 [15:47<02:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 351/400:  88%|▉| 350/400 [15:47<02:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 351/400:  88%|▉| 351/400 [15:50<02:11,  2.69s/it, v_num=1, train_loss_ste
+Epoch 351/400:  88%|▉| 351/400 [15:50<02:11,  2.69s/it, v_num=1, train_loss_ste
+Epoch 352/400:  88%|▉| 351/400 [15:50<02:11,  2.69s/it, v_num=1, train_loss_ste
+Epoch 352/400:  88%|▉| 352/400 [15:53<02:08,  2.68s/it, v_num=1, train_loss_ste
+Epoch 352/400:  88%|▉| 352/400 [15:53<02:08,  2.68s/it, v_num=1, train_loss_ste
+Epoch 353/400:  88%|▉| 352/400 [15:53<02:08,  2.68s/it, v_num=1, train_loss_ste
+Epoch 353/400:  88%|▉| 353/400 [15:56<02:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 353/400:  88%|▉| 353/400 [15:56<02:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 354/400:  88%|▉| 353/400 [15:56<02:06,  2.69s/it, v_num=1, train_loss_ste
+Epoch 354/400:  88%|▉| 354/400 [15:58<02:02,  2.66s/it, v_num=1, train_loss_ste
+Epoch 354/400:  88%|▉| 354/400 [15:58<02:02,  2.66s/it, v_num=1, train_loss_ste
+Epoch 355/400:  88%|▉| 354/400 [15:58<02:02,  2.66s/it, v_num=1, train_loss_ste
+Epoch 355/400:  89%|▉| 355/400 [16:01<01:59,  2.66s/it, v_num=1, train_loss_ste
+Epoch 355/400:  89%|▉| 355/400 [16:01<01:59,  2.66s/it, v_num=1, train_loss_ste
+Epoch 356/400:  89%|▉| 355/400 [16:01<01:59,  2.66s/it, v_num=1, train_loss_ste
+Epoch 356/400:  89%|▉| 356/400 [16:03<01:56,  2.64s/it, v_num=1, train_loss_ste
+Epoch 356/400:  89%|▉| 356/400 [16:03<01:56,  2.64s/it, v_num=1, train_loss_ste
+Epoch 357/400:  89%|▉| 356/400 [16:03<01:56,  2.64s/it, v_num=1, train_loss_ste
+Epoch 357/400:  89%|▉| 357/400 [16:06<01:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 357/400:  89%|▉| 357/400 [16:06<01:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 358/400:  89%|▉| 357/400 [16:06<01:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 358/400:  90%|▉| 358/400 [16:09<01:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 358/400:  90%|▉| 358/400 [16:09<01:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 359/400:  90%|▉| 358/400 [16:09<01:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 359/400:  90%|▉| 359/400 [16:11<01:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 359/400:  90%|▉| 359/400 [16:11<01:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 360/400:  90%|▉| 359/400 [16:11<01:49,  2.67s/it, v_num=1, train_loss_ste
+Epoch 360/400:  90%|▉| 360/400 [16:14<01:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 360/400:  90%|▉| 360/400 [16:14<01:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 361/400:  90%|▉| 360/400 [16:14<01:47,  2.68s/it, v_num=1, train_loss_ste
+Epoch 361/400:  90%|▉| 361/400 [16:17<01:44,  2.68s/it, v_num=1, train_loss_ste
+Epoch 361/400:  90%|▉| 361/400 [16:17<01:44,  2.68s/it, v_num=1, train_loss_ste
+Epoch 362/400:  90%|▉| 361/400 [16:17<01:44,  2.68s/it, v_num=1, train_loss_ste
+Epoch 362/400:  90%|▉| 362/400 [16:19<01:41,  2.68s/it, v_num=1, train_loss_ste
+Epoch 362/400:  90%|▉| 362/400 [16:19<01:41,  2.68s/it, v_num=1, train_loss_ste
+Epoch 363/400:  90%|▉| 362/400 [16:19<01:41,  2.68s/it, v_num=1, train_loss_ste
+Epoch 363/400:  91%|▉| 363/400 [16:22<01:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 363/400:  91%|▉| 363/400 [16:22<01:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 364/400:  91%|▉| 363/400 [16:22<01:39,  2.68s/it, v_num=1, train_loss_ste
+Epoch 364/400:  91%|▉| 364/400 [16:25<01:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 364/400:  91%|▉| 364/400 [16:25<01:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 365/400:  91%|▉| 364/400 [16:25<01:36,  2.67s/it, v_num=1, train_loss_ste
+Epoch 365/400:  91%|▉| 365/400 [16:28<01:33,  2.68s/it, v_num=1, train_loss_ste
+Epoch 365/400:  91%|▉| 365/400 [16:28<01:33,  2.68s/it, v_num=1, train_loss_ste
+Epoch 366/400:  91%|▉| 365/400 [16:28<01:33,  2.68s/it, v_num=1, train_loss_ste
+Epoch 366/400:  92%|▉| 366/400 [16:30<01:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 366/400:  92%|▉| 366/400 [16:30<01:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 367/400:  92%|▉| 366/400 [16:30<01:31,  2.69s/it, v_num=1, train_loss_ste
+Epoch 367/400:  92%|▉| 367/400 [16:33<01:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 367/400:  92%|▉| 367/400 [16:33<01:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 368/400:  92%|▉| 367/400 [16:33<01:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 368/400:  92%|▉| 368/400 [16:36<01:26,  2.70s/it, v_num=1, train_loss_ste
+Epoch 368/400:  92%|▉| 368/400 [16:36<01:26,  2.70s/it, v_num=1, train_loss_ste
+Epoch 369/400:  92%|▉| 368/400 [16:36<01:26,  2.70s/it, v_num=1, train_loss_ste
+Epoch 369/400:  92%|▉| 369/400 [16:38<01:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 369/400:  92%|▉| 369/400 [16:38<01:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 370/400:  92%|▉| 369/400 [16:38<01:23,  2.69s/it, v_num=1, train_loss_ste
+Epoch 370/400:  92%|▉| 370/400 [16:41<01:19,  2.66s/it, v_num=1, train_loss_ste
+Epoch 370/400:  92%|▉| 370/400 [16:41<01:19,  2.66s/it, v_num=1, train_loss_ste
+Epoch 371/400:  92%|▉| 370/400 [16:41<01:19,  2.66s/it, v_num=1, train_loss_ste
+Epoch 371/400:  93%|▉| 371/400 [16:44<01:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 371/400:  93%|▉| 371/400 [16:44<01:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 372/400:  93%|▉| 371/400 [16:44<01:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 372/400:  93%|▉| 372/400 [16:46<01:15,  2.68s/it, v_num=1, train_loss_ste
+Epoch 372/400:  93%|▉| 372/400 [16:46<01:15,  2.68s/it, v_num=1, train_loss_ste
+Epoch 373/400:  93%|▉| 372/400 [16:46<01:15,  2.68s/it, v_num=1, train_loss_ste
+Epoch 373/400:  93%|▉| 373/400 [16:49<01:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 373/400:  93%|▉| 373/400 [16:49<01:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 374/400:  93%|▉| 373/400 [16:49<01:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 374/400:  94%|▉| 374/400 [16:52<01:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 374/400:  94%|▉| 374/400 [16:52<01:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 375/400:  94%|▉| 374/400 [16:52<01:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 375/400:  94%|▉| 375/400 [16:54<01:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 375/400:  94%|▉| 375/400 [16:54<01:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 376/400:  94%|▉| 375/400 [16:54<01:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 376/400:  94%|▉| 376/400 [16:57<01:03,  2.64s/it, v_num=1, train_loss_ste
+Epoch 376/400:  94%|▉| 376/400 [16:57<01:03,  2.64s/it, v_num=1, train_loss_ste
+Epoch 377/400:  94%|▉| 376/400 [16:57<01:03,  2.64s/it, v_num=1, train_loss_ste
+Epoch 377/400:  94%|▉| 377/400 [16:59<01:00,  2.63s/it, v_num=1, train_loss_ste
+Epoch 377/400:  94%|▉| 377/400 [16:59<01:00,  2.63s/it, v_num=1, train_loss_ste
+Epoch 378/400:  94%|▉| 377/400 [16:59<01:00,  2.63s/it, v_num=1, train_loss_ste
+Epoch 378/400:  94%|▉| 378/400 [17:02<00:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 378/400:  94%|▉| 378/400 [17:02<00:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 379/400:  94%|▉| 378/400 [17:02<00:58,  2.66s/it, v_num=1, train_loss_ste
+Epoch 379/400:  95%|▉| 379/400 [17:05<00:55,  2.66s/it, v_num=1, train_loss_ste
+Epoch 379/400:  95%|▉| 379/400 [17:05<00:55,  2.66s/it, v_num=1, train_loss_ste
+Epoch 380/400:  95%|▉| 379/400 [17:05<00:55,  2.66s/it, v_num=1, train_loss_ste
+Epoch 380/400:  95%|▉| 380/400 [17:08<00:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 380/400:  95%|▉| 380/400 [17:08<00:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 381/400:  95%|▉| 380/400 [17:08<00:53,  2.67s/it, v_num=1, train_loss_ste
+Epoch 381/400:  95%|▉| 381/400 [17:10<00:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 381/400:  95%|▉| 381/400 [17:10<00:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 382/400:  95%|▉| 381/400 [17:10<00:50,  2.68s/it, v_num=1, train_loss_ste
+Epoch 382/400:  96%|▉| 382/400 [17:13<00:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 382/400:  96%|▉| 382/400 [17:13<00:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 383/400:  96%|▉| 382/400 [17:13<00:48,  2.68s/it, v_num=1, train_loss_ste
+Epoch 383/400:  96%|▉| 383/400 [17:16<00:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 383/400:  96%|▉| 383/400 [17:16<00:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 384/400:  96%|▉| 383/400 [17:16<00:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 384/400:  96%|▉| 384/400 [17:18<00:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 384/400:  96%|▉| 384/400 [17:18<00:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 385/400:  96%|▉| 384/400 [17:18<00:43,  2.69s/it, v_num=1, train_loss_ste
+Epoch 385/400:  96%|▉| 385/400 [17:21<00:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 385/400:  96%|▉| 385/400 [17:21<00:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 386/400:  96%|▉| 385/400 [17:21<00:40,  2.69s/it, v_num=1, train_loss_ste
+Epoch 386/400:  96%|▉| 386/400 [17:24<00:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 386/400:  96%|▉| 386/400 [17:24<00:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 387/400:  96%|▉| 386/400 [17:24<00:37,  2.70s/it, v_num=1, train_loss_ste
+Epoch 387/400:  97%|▉| 387/400 [17:26<00:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 387/400:  97%|▉| 387/400 [17:26<00:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 388/400:  97%|▉| 387/400 [17:26<00:35,  2.70s/it, v_num=1, train_loss_ste
+Epoch 388/400:  97%|▉| 388/400 [17:29<00:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 388/400:  97%|▉| 388/400 [17:29<00:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 389/400:  97%|▉| 388/400 [17:29<00:32,  2.70s/it, v_num=1, train_loss_ste
+Epoch 389/400:  97%|▉| 389/400 [17:32<00:29,  2.68s/it, v_num=1, train_loss_ste
+Epoch 389/400:  97%|▉| 389/400 [17:32<00:29,  2.68s/it, v_num=1, train_loss_ste
+Epoch 390/400:  97%|▉| 389/400 [17:32<00:29,  2.68s/it, v_num=1, train_loss_ste
+Epoch 390/400:  98%|▉| 390/400 [17:34<00:26,  2.67s/it, v_num=1, train_loss_ste
+Epoch 390/400:  98%|▉| 390/400 [17:34<00:26,  2.67s/it, v_num=1, train_loss_ste
+Epoch 391/400:  98%|▉| 390/400 [17:34<00:26,  2.67s/it, v_num=1, train_loss_ste
+Epoch 391/400:  98%|▉| 391/400 [17:37<00:24,  2.67s/it, v_num=1, train_loss_ste
+Epoch 391/400:  98%|▉| 391/400 [17:37<00:24,  2.67s/it, v_num=1, train_loss_ste
+Epoch 392/400:  98%|▉| 391/400 [17:37<00:24,  2.67s/it, v_num=1, train_loss_ste
+Epoch 392/400:  98%|▉| 392/400 [17:40<00:21,  2.67s/it, v_num=1, train_loss_ste
+Epoch 392/400:  98%|▉| 392/400 [17:40<00:21,  2.67s/it, v_num=1, train_loss_ste
+Epoch 393/400:  98%|▉| 392/400 [17:40<00:21,  2.67s/it, v_num=1, train_loss_ste
+Epoch 393/400:  98%|▉| 393/400 [17:42<00:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 393/400:  98%|▉| 393/400 [17:42<00:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 394/400:  98%|▉| 393/400 [17:42<00:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 394/400:  98%|▉| 394/400 [17:45<00:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 394/400:  98%|▉| 394/400 [17:45<00:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 395/400:  98%|▉| 394/400 [17:45<00:16,  2.68s/it, v_num=1, train_loss_ste
+Epoch 395/400:  99%|▉| 395/400 [17:48<00:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 395/400:  99%|▉| 395/400 [17:48<00:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 396/400:  99%|▉| 395/400 [17:48<00:13,  2.69s/it, v_num=1, train_loss_ste
+Epoch 396/400:  99%|▉| 396/400 [17:51<00:10,  2.69s/it, v_num=1, train_loss_ste
+Epoch 396/400:  99%|▉| 396/400 [17:51<00:10,  2.69s/it, v_num=1, train_loss_ste
+Epoch 397/400:  99%|▉| 396/400 [17:51<00:10,  2.69s/it, v_num=1, train_loss_ste
+Epoch 397/400:  99%|▉| 397/400 [17:53<00:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 397/400:  99%|▉| 397/400 [17:53<00:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 398/400:  99%|▉| 397/400 [17:53<00:08,  2.69s/it, v_num=1, train_loss_ste
+Epoch 398/400: 100%|▉| 398/400 [17:56<00:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 398/400: 100%|▉| 398/400 [17:56<00:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 399/400: 100%|▉| 398/400 [17:56<00:05,  2.69s/it, v_num=1, train_loss_ste
+Epoch 399/400: 100%|▉| 399/400 [17:59<00:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 399/400: 100%|▉| 399/400 [17:59<00:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 400/400: 100%|▉| 399/400 [17:59<00:02,  2.69s/it, v_num=1, train_loss_ste
+Epoch 400/400: 100%|█| 400/400 [18:01<00:00,  2.70s/it, v_num=1, train_loss_ste
+Epoch 400/400: 100%|█| 400/400 [18:01<00:00,  2.70s/it, v_num=1, train_loss_ste`Trainer.fit` stopped: `max_epochs=400` reached.
+
+Epoch 400/400: 100%|█| 400/400 [18:01<00:00,  2.70s/it, v_num=1, train_loss_ste
+[scvi] d=30 done in 1082s, latent shape=(38193, 30)
+
+[scvi] training d=20…
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+Training:   0%|                                        | 0/400 [00:00<?, ?it/s]
+Epoch 1/400:   0%|                                     | 0/400 [00:00<?, ?it/s]
+Epoch 1/400:   0%|                             | 1/400 [00:02<17:55,  2.70s/it]
+Epoch 1/400:   0%| | 1/400 [00:02<17:55,  2.70s/it, v_num=1, train_loss_step=56
+Epoch 2/400:   0%| | 1/400 [00:02<17:55,  2.70s/it, v_num=1, train_loss_step=56
+Epoch 2/400:   0%| | 2/400 [00:05<17:47,  2.68s/it, v_num=1, train_loss_step=56
+Epoch 2/400:   0%| | 2/400 [00:05<17:47,  2.68s/it, v_num=1, train_loss_step=64
+Epoch 3/400:   0%| | 2/400 [00:05<17:47,  2.68s/it, v_num=1, train_loss_step=64
+Epoch 3/400:   1%| | 3/400 [00:08<17:40,  2.67s/it, v_num=1, train_loss_step=64
+Epoch 3/400:   1%| | 3/400 [00:08<17:40,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 4/400:   1%| | 3/400 [00:08<17:40,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 4/400:   1%| | 4/400 [00:10<17:36,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 4/400:   1%| | 4/400 [00:10<17:36,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 5/400:   1%| | 4/400 [00:10<17:36,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 5/400:   1%| | 5/400 [00:13<17:34,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 5/400:   1%| | 5/400 [00:13<17:34,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 6/400:   1%| | 5/400 [00:13<17:34,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 6/400:   2%| | 6/400 [00:16<17:30,  2.67s/it, v_num=1, train_loss_step=56
+Epoch 6/400:   2%| | 6/400 [00:16<17:30,  2.67s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 6/400 [00:16<17:30,  2.67s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 7/400 [00:18<17:25,  2.66s/it, v_num=1, train_loss_step=60
+Epoch 7/400:   2%| | 7/400 [00:18<17:25,  2.66s/it, v_num=1, train_loss_step=53
+Epoch 8/400:   2%| | 7/400 [00:18<17:25,  2.66s/it, v_num=1, train_loss_step=53
+Epoch 8/400:   2%| | 8/400 [00:21<17:21,  2.66s/it, v_num=1, train_loss_step=53
+Epoch 8/400:   2%| | 8/400 [00:21<17:21,  2.66s/it, v_num=1, train_loss_step=56
+Epoch 9/400:   2%| | 8/400 [00:21<17:21,  2.66s/it, v_num=1, train_loss_step=56
+Epoch 9/400:   2%| | 9/400 [00:23<17:18,  2.65s/it, v_num=1, train_loss_step=56
+Epoch 9/400:   2%| | 9/400 [00:23<17:18,  2.65s/it, v_num=1, train_loss_step=59
+Epoch 10/400:   2%| | 9/400 [00:23<17:18,  2.65s/it, v_num=1, train_loss_step=5
+Epoch 10/400:   2%| | 10/400 [00:26<17:16,  2.66s/it, v_num=1, train_loss_step=
+Epoch 10/400:   2%| | 10/400 [00:26<17:16,  2.66s/it, v_num=1, train_loss_step=
+Epoch 11/400:   2%| | 10/400 [00:26<17:16,  2.66s/it, v_num=1, train_loss_step=
+Epoch 11/400:   3%| | 11/400 [00:29<17:15,  2.66s/it, v_num=1, train_loss_step=
+Epoch 11/400:   3%| | 11/400 [00:29<17:15,  2.66s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 11/400 [00:29<17:15,  2.66s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 12/400 [00:31<17:15,  2.67s/it, v_num=1, train_loss_step=
+Epoch 12/400:   3%| | 12/400 [00:31<17:15,  2.67s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 12/400 [00:31<17:15,  2.67s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 13/400 [00:34<17:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 13/400:   3%| | 13/400 [00:34<17:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 14/400:   3%| | 13/400 [00:34<17:08,  2.66s/it, v_num=1, train_loss_step=
+Epoch 14/400:   4%| | 14/400 [00:37<17:07,  2.66s/it, v_num=1, train_loss_step=
+Epoch 14/400:   4%| | 14/400 [00:37<17:07,  2.66s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 14/400 [00:37<17:07,  2.66s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 15/400 [00:39<17:05,  2.66s/it, v_num=1, train_loss_step=
+Epoch 15/400:   4%| | 15/400 [00:39<17:05,  2.66s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 15/400 [00:39<17:05,  2.66s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 16/400 [00:42<17:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 16/400:   4%| | 16/400 [00:42<17:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 16/400 [00:42<17:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 17/400 [00:45<17:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 17/400:   4%| | 17/400 [00:45<17:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 17/400 [00:45<17:07,  2.68s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 18/400 [00:48<17:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 18/400:   4%| | 18/400 [00:48<17:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 19/400:   4%| | 18/400 [00:48<17:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 19/400:   5%| | 19/400 [00:50<16:56,  2.67s/it, v_num=1, train_loss_step=
+Epoch 19/400:   5%| | 19/400 [00:50<16:56,  2.67s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 19/400 [00:50<16:56,  2.67s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 20/400 [00:53<16:52,  2.66s/it, v_num=1, train_loss_step=
+Epoch 20/400:   5%| | 20/400 [00:53<16:52,  2.66s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 20/400 [00:53<16:52,  2.66s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 21/400 [00:55<16:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 21/400:   5%| | 21/400 [00:55<16:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 22/400:   5%| | 21/400 [00:56<16:49,  2.66s/it, v_num=1, train_loss_step=
+Epoch 22/400:   6%| | 22/400 [00:58<16:44,  2.66s/it, v_num=1, train_loss_step=
+Epoch 22/400:   6%| | 22/400 [00:58<16:44,  2.66s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 22/400 [00:58<16:44,  2.66s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 23/400 [01:01<16:45,  2.67s/it, v_num=1, train_loss_step=
+Epoch 23/400:   6%| | 23/400 [01:01<16:45,  2.67s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 23/400 [01:01<16:45,  2.67s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 24/400 [01:03<16:41,  2.66s/it, v_num=1, train_loss_step=
+Epoch 24/400:   6%| | 24/400 [01:03<16:41,  2.66s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 24/400 [01:03<16:41,  2.66s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 25/400 [01:06<16:38,  2.66s/it, v_num=1, train_loss_step=
+Epoch 25/400:   6%| | 25/400 [01:06<16:38,  2.66s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 25/400 [01:06<16:38,  2.66s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 26/400 [01:09<16:35,  2.66s/it, v_num=1, train_loss_step=
+Epoch 26/400:   6%| | 26/400 [01:09<16:35,  2.66s/it, v_num=1, train_loss_step=
+Epoch 27/400:   6%| | 26/400 [01:09<16:35,  2.66s/it, v_num=1, train_loss_step=
+Epoch 27/400:   7%| | 27/400 [01:11<16:27,  2.65s/it, v_num=1, train_loss_step=
+Epoch 27/400:   7%| | 27/400 [01:11<16:27,  2.65s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 27/400 [01:11<16:27,  2.65s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 28/400 [01:14<16:17,  2.63s/it, v_num=1, train_loss_step=
+Epoch 28/400:   7%| | 28/400 [01:14<16:17,  2.63s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 28/400 [01:14<16:17,  2.63s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 29/400 [01:17<16:19,  2.64s/it, v_num=1, train_loss_step=
+Epoch 29/400:   7%| | 29/400 [01:17<16:19,  2.64s/it, v_num=1, train_loss_step=
+Epoch 30/400:   7%| | 29/400 [01:17<16:19,  2.64s/it, v_num=1, train_loss_step=
+Epoch 30/400:   8%| | 30/400 [01:19<16:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 30/400:   8%| | 30/400 [01:19<16:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 30/400 [01:19<16:24,  2.66s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 31/400 [01:22<16:24,  2.67s/it, v_num=1, train_loss_step=
+Epoch 31/400:   8%| | 31/400 [01:22<16:24,  2.67s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 31/400 [01:22<16:24,  2.67s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 32/400 [01:25<16:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 32/400:   8%| | 32/400 [01:25<16:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 32/400 [01:25<16:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 33/400 [01:27<16:22,  2.68s/it, v_num=1, train_loss_step=
+Epoch 33/400:   8%| | 33/400 [01:27<16:22,  2.68s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 33/400 [01:27<16:22,  2.68s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 34/400 [01:30<16:33,  2.72s/it, v_num=1, train_loss_step=
+Epoch 34/400:   8%| | 34/400 [01:30<16:33,  2.72s/it, v_num=1, train_loss_step=
+Epoch 35/400:   8%| | 34/400 [01:30<16:33,  2.72s/it, v_num=1, train_loss_step=
+Epoch 35/400:   9%| | 35/400 [01:33<16:25,  2.70s/it, v_num=1, train_loss_step=
+Epoch 35/400:   9%| | 35/400 [01:33<16:25,  2.70s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 35/400 [01:33<16:25,  2.70s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 36/400 [01:36<16:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 36/400:   9%| | 36/400 [01:36<16:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 36/400 [01:36<16:19,  2.69s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 37/400 [01:38<16:17,  2.69s/it, v_num=1, train_loss_step=
+Epoch 37/400:   9%| | 37/400 [01:38<16:17,  2.69s/it, v_num=1, train_loss_step=
+Epoch 38/400:   9%| | 37/400 [01:38<16:17,  2.69s/it, v_num=1, train_loss_step=
+Epoch 38/400:  10%| | 38/400 [01:41<16:14,  2.69s/it, v_num=1, train_loss_step=
+Epoch 38/400:  10%| | 38/400 [01:41<16:14,  2.69s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 38/400 [01:41<16:14,  2.69s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 39/400 [01:44<16:11,  2.69s/it, v_num=1, train_loss_step=
+Epoch 39/400:  10%| | 39/400 [01:44<16:11,  2.69s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 39/400 [01:44<16:11,  2.69s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 40/400 [01:46<16:09,  2.69s/it, v_num=1, train_loss_step=
+Epoch 40/400:  10%| | 40/400 [01:46<16:09,  2.69s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 40/400 [01:46<16:09,  2.69s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 41/400 [01:49<16:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 41/400:  10%| | 41/400 [01:49<16:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 41/400 [01:49<16:07,  2.69s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 42/400 [01:52<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 42/400:  10%| | 42/400 [01:52<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 43/400:  10%| | 42/400 [01:52<15:57,  2.67s/it, v_num=1, train_loss_step=
+Epoch 43/400:  11%| | 43/400 [01:54<15:52,  2.67s/it, v_num=1, train_loss_step=
+Epoch 43/400:  11%| | 43/400 [01:54<15:52,  2.67s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 43/400 [01:54<15:52,  2.67s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 44/400 [01:57<15:53,  2.68s/it, v_num=1, train_loss_step=
+Epoch 44/400:  11%| | 44/400 [01:57<15:53,  2.68s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 44/400 [01:57<15:53,  2.68s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 45/400 [02:00<15:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 45/400:  11%| | 45/400 [02:00<15:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 46/400:  11%| | 45/400 [02:00<15:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 46/400:  12%| | 46/400 [02:02<15:52,  2.69s/it, v_num=1, train_loss_step=
+Epoch 46/400:  12%| | 46/400 [02:02<15:52,  2.69s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 46/400 [02:02<15:52,  2.69s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 47/400 [02:05<15:48,  2.69s/it, v_num=1, train_loss_step=
+Epoch 47/400:  12%| | 47/400 [02:05<15:48,  2.69s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 47/400 [02:05<15:48,  2.69s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 48/400 [02:08<15:46,  2.69s/it, v_num=1, train_loss_step=
+Epoch 48/400:  12%| | 48/400 [02:08<15:46,  2.69s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 48/400 [02:08<15:46,  2.69s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 49/400 [02:10<15:43,  2.69s/it, v_num=1, train_loss_step=
+Epoch 49/400:  12%| | 49/400 [02:10<15:43,  2.69s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%| | 49/400 [02:11<15:43,  2.69s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%|▏| 50/400 [02:13<15:32,  2.66s/it, v_num=1, train_loss_step=
+Epoch 50/400:  12%|▏| 50/400 [02:13<15:32,  2.66s/it, v_num=1, train_loss_step=
+Epoch 51/400:  12%|▏| 50/400 [02:13<15:32,  2.66s/it, v_num=1, train_loss_step=
+Epoch 51/400:  13%|▏| 51/400 [02:16<15:31,  2.67s/it, v_num=1, train_loss_step=
+Epoch 51/400:  13%|▏| 51/400 [02:16<15:31,  2.67s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 51/400 [02:16<15:31,  2.67s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 52/400 [02:18<15:28,  2.67s/it, v_num=1, train_loss_step=
+Epoch 52/400:  13%|▏| 52/400 [02:18<15:28,  2.67s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 52/400 [02:18<15:28,  2.67s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 53/400 [02:21<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 53/400:  13%|▏| 53/400 [02:21<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 54/400:  13%|▏| 53/400 [02:21<15:22,  2.66s/it, v_num=1, train_loss_step=
+Epoch 54/400:  14%|▏| 54/400 [02:24<15:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 54/400:  14%|▏| 54/400 [02:24<15:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 54/400 [02:24<15:23,  2.67s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 55/400 [02:26<15:21,  2.67s/it, v_num=1, train_loss_step=
+Epoch 55/400:  14%|▏| 55/400 [02:26<15:21,  2.67s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 55/400 [02:26<15:21,  2.67s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 56/400 [02:29<15:20,  2.67s/it, v_num=1, train_loss_step=
+Epoch 56/400:  14%|▏| 56/400 [02:29<15:20,  2.67s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 56/400 [02:29<15:20,  2.67s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 57/400 [02:32<15:18,  2.68s/it, v_num=1, train_loss_step=
+Epoch 57/400:  14%|▏| 57/400 [02:32<15:18,  2.68s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 57/400 [02:32<15:18,  2.68s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 58/400 [02:35<15:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 58/400:  14%|▏| 58/400 [02:35<15:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 59/400:  14%|▏| 58/400 [02:35<15:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 59/400:  15%|▏| 59/400 [02:37<15:20,  2.70s/it, v_num=1, train_loss_step=
+Epoch 59/400:  15%|▏| 59/400 [02:37<15:20,  2.70s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 59/400 [02:37<15:20,  2.70s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 60/400 [02:40<15:17,  2.70s/it, v_num=1, train_loss_step=
+Epoch 60/400:  15%|▏| 60/400 [02:40<15:17,  2.70s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 60/400 [02:40<15:17,  2.70s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 61/400 [02:43<15:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 61/400:  15%|▏| 61/400 [02:43<15:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 62/400:  15%|▏| 61/400 [02:43<15:08,  2.68s/it, v_num=1, train_loss_step=
+Epoch 62/400:  16%|▏| 62/400 [02:45<15:04,  2.68s/it, v_num=1, train_loss_step=
+Epoch 62/400:  16%|▏| 62/400 [02:45<15:04,  2.68s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 62/400 [02:45<15:04,  2.68s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 63/400 [02:48<15:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 63/400:  16%|▏| 63/400 [02:48<15:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 63/400 [02:48<15:02,  2.68s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 64/400 [02:51<14:59,  2.68s/it, v_num=1, train_loss_step=
+Epoch 64/400:  16%|▏| 64/400 [02:51<14:59,  2.68s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 64/400 [02:51<14:59,  2.68s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 65/400 [02:53<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 65/400:  16%|▏| 65/400 [02:53<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 65/400 [02:53<14:56,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 66/400 [02:56<14:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 66/400:  16%|▏| 66/400 [02:56<14:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 67/400:  16%|▏| 66/400 [02:56<14:54,  2.68s/it, v_num=1, train_loss_step=
+Epoch 67/400:  17%|▏| 67/400 [02:59<14:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 67/400:  17%|▏| 67/400 [02:59<14:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 67/400 [02:59<14:51,  2.68s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 68/400 [03:01<14:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 68/400:  17%|▏| 68/400 [03:01<14:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 68/400 [03:01<14:49,  2.68s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 69/400 [03:04<14:43,  2.67s/it, v_num=1, train_loss_step=
+Epoch 69/400:  17%|▏| 69/400 [03:04<14:43,  2.67s/it, v_num=1, train_loss_step=
+Epoch 70/400:  17%|▏| 69/400 [03:04<14:43,  2.67s/it, v_num=1, train_loss_step=
+Epoch 70/400:  18%|▏| 70/400 [03:07<14:43,  2.68s/it, v_num=1, train_loss_step=
+Epoch 70/400:  18%|▏| 70/400 [03:07<14:43,  2.68s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 70/400 [03:07<14:43,  2.68s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 71/400 [03:09<14:41,  2.68s/it, v_num=1, train_loss_step=
+Epoch 71/400:  18%|▏| 71/400 [03:09<14:41,  2.68s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 71/400 [03:09<14:41,  2.68s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 72/400 [03:12<14:38,  2.68s/it, v_num=1, train_loss_step=
+Epoch 72/400:  18%|▏| 72/400 [03:12<14:38,  2.68s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 72/400 [03:12<14:38,  2.68s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 73/400 [03:15<14:43,  2.70s/it, v_num=1, train_loss_step=
+Epoch 73/400:  18%|▏| 73/400 [03:15<14:43,  2.70s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 73/400 [03:15<14:43,  2.70s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 74/400 [03:18<14:47,  2.72s/it, v_num=1, train_loss_step=
+Epoch 74/400:  18%|▏| 74/400 [03:18<14:47,  2.72s/it, v_num=1, train_loss_step=
+Epoch 75/400:  18%|▏| 74/400 [03:18<14:47,  2.72s/it, v_num=1, train_loss_step=
+Epoch 75/400:  19%|▏| 75/400 [03:20<14:47,  2.73s/it, v_num=1, train_loss_step=
+Epoch 75/400:  19%|▏| 75/400 [03:20<14:47,  2.73s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 75/400 [03:20<14:47,  2.73s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 76/400 [03:23<14:46,  2.74s/it, v_num=1, train_loss_step=
+Epoch 76/400:  19%|▏| 76/400 [03:23<14:46,  2.74s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 76/400 [03:23<14:46,  2.74s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 77/400 [03:26<14:48,  2.75s/it, v_num=1, train_loss_step=
+Epoch 77/400:  19%|▏| 77/400 [03:26<14:48,  2.75s/it, v_num=1, train_loss_step=
+Epoch 78/400:  19%|▏| 77/400 [03:26<14:48,  2.75s/it, v_num=1, train_loss_step=
+Epoch 78/400:  20%|▏| 78/400 [03:29<14:40,  2.73s/it, v_num=1, train_loss_step=
+Epoch 78/400:  20%|▏| 78/400 [03:29<14:40,  2.73s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 78/400 [03:29<14:40,  2.73s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 79/400 [03:31<14:30,  2.71s/it, v_num=1, train_loss_step=
+Epoch 79/400:  20%|▏| 79/400 [03:31<14:30,  2.71s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 79/400 [03:31<14:30,  2.71s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 80/400 [03:34<14:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 80/400:  20%|▏| 80/400 [03:34<14:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 80/400 [03:34<14:22,  2.70s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 81/400 [03:37<14:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 81/400:  20%|▏| 81/400 [03:37<14:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 81/400 [03:37<14:15,  2.68s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 82/400 [03:39<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 82/400:  20%|▏| 82/400 [03:39<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 83/400:  20%|▏| 82/400 [03:39<14:06,  2.66s/it, v_num=1, train_loss_step=
+Epoch 83/400:  21%|▏| 83/400 [03:42<13:55,  2.63s/it, v_num=1, train_loss_step=
+Epoch 83/400:  21%|▏| 83/400 [03:42<13:55,  2.63s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 83/400 [03:42<13:55,  2.63s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 84/400 [03:44<13:47,  2.62s/it, v_num=1, train_loss_step=
+Epoch 84/400:  21%|▏| 84/400 [03:44<13:47,  2.62s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 84/400 [03:44<13:47,  2.62s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 85/400 [03:47<13:40,  2.60s/it, v_num=1, train_loss_step=
+Epoch 85/400:  21%|▏| 85/400 [03:47<13:40,  2.60s/it, v_num=1, train_loss_step=
+Epoch 86/400:  21%|▏| 85/400 [03:47<13:40,  2.60s/it, v_num=1, train_loss_step=
+Epoch 86/400:  22%|▏| 86/400 [03:49<13:36,  2.60s/it, v_num=1, train_loss_step=
+Epoch 86/400:  22%|▏| 86/400 [03:49<13:36,  2.60s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 86/400 [03:49<13:36,  2.60s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 87/400 [03:52<13:45,  2.64s/it, v_num=1, train_loss_step=
+Epoch 87/400:  22%|▏| 87/400 [03:52<13:45,  2.64s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 87/400 [03:52<13:45,  2.64s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 88/400 [03:55<13:50,  2.66s/it, v_num=1, train_loss_step=
+Epoch 88/400:  22%|▏| 88/400 [03:55<13:50,  2.66s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 88/400 [03:55<13:50,  2.66s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 89/400 [03:58<13:48,  2.66s/it, v_num=1, train_loss_step=
+Epoch 89/400:  22%|▏| 89/400 [03:58<13:48,  2.66s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 89/400 [03:58<13:48,  2.66s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 90/400 [04:00<13:46,  2.67s/it, v_num=1, train_loss_step=
+Epoch 90/400:  22%|▏| 90/400 [04:00<13:46,  2.67s/it, v_num=1, train_loss_step=
+Epoch 91/400:  22%|▏| 90/400 [04:00<13:46,  2.67s/it, v_num=1, train_loss_step=
+Epoch 91/400:  23%|▏| 91/400 [04:03<13:42,  2.66s/it, v_num=1, train_loss_step=
+Epoch 91/400:  23%|▏| 91/400 [04:03<13:42,  2.66s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 91/400 [04:03<13:42,  2.66s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 92/400 [04:05<13:33,  2.64s/it, v_num=1, train_loss_step=
+Epoch 92/400:  23%|▏| 92/400 [04:05<13:33,  2.64s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 92/400 [04:05<13:33,  2.64s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 93/400 [04:08<13:24,  2.62s/it, v_num=1, train_loss_step=
+Epoch 93/400:  23%|▏| 93/400 [04:08<13:24,  2.62s/it, v_num=1, train_loss_step=
+Epoch 94/400:  23%|▏| 93/400 [04:08<13:24,  2.62s/it, v_num=1, train_loss_step=
+Epoch 94/400:  24%|▏| 94/400 [04:11<13:18,  2.61s/it, v_num=1, train_loss_step=
+Epoch 94/400:  24%|▏| 94/400 [04:11<13:18,  2.61s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 94/400 [04:11<13:18,  2.61s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 95/400 [04:13<13:13,  2.60s/it, v_num=1, train_loss_step=
+Epoch 95/400:  24%|▏| 95/400 [04:13<13:13,  2.60s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 95/400 [04:13<13:13,  2.60s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 96/400 [04:16<13:09,  2.60s/it, v_num=1, train_loss_step=
+Epoch 96/400:  24%|▏| 96/400 [04:16<13:09,  2.60s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 96/400 [04:16<13:09,  2.60s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 97/400 [04:18<13:11,  2.61s/it, v_num=1, train_loss_step=
+Epoch 97/400:  24%|▏| 97/400 [04:18<13:11,  2.61s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 97/400 [04:18<13:11,  2.61s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 98/400 [04:21<13:12,  2.62s/it, v_num=1, train_loss_step=
+Epoch 98/400:  24%|▏| 98/400 [04:21<13:12,  2.62s/it, v_num=1, train_loss_step=
+Epoch 99/400:  24%|▏| 98/400 [04:21<13:12,  2.62s/it, v_num=1, train_loss_step=
+Epoch 99/400:  25%|▏| 99/400 [04:24<13:09,  2.62s/it, v_num=1, train_loss_step=
+Epoch 99/400:  25%|▏| 99/400 [04:24<13:09,  2.62s/it, v_num=1, train_loss_step=
+Epoch 100/400:  25%|▏| 99/400 [04:24<13:09,  2.62s/it, v_num=1, train_loss_step
+Epoch 100/400:  25%|▎| 100/400 [04:26<13:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 100/400:  25%|▎| 100/400 [04:26<13:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 100/400 [04:26<13:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 101/400 [04:29<13:09,  2.64s/it, v_num=1, train_loss_ste
+Epoch 101/400:  25%|▎| 101/400 [04:29<13:09,  2.64s/it, v_num=1, train_loss_ste
+Epoch 102/400:  25%|▎| 101/400 [04:29<13:09,  2.64s/it, v_num=1, train_loss_ste
+Epoch 102/400:  26%|▎| 102/400 [04:32<13:08,  2.65s/it, v_num=1, train_loss_ste
+Epoch 102/400:  26%|▎| 102/400 [04:32<13:08,  2.65s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 102/400 [04:32<13:08,  2.65s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 103/400 [04:34<13:05,  2.64s/it, v_num=1, train_loss_ste
+Epoch 103/400:  26%|▎| 103/400 [04:34<13:05,  2.64s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 103/400 [04:34<13:05,  2.64s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 104/400 [04:37<12:57,  2.63s/it, v_num=1, train_loss_ste
+Epoch 104/400:  26%|▎| 104/400 [04:37<12:57,  2.63s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 104/400 [04:37<12:57,  2.63s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 105/400 [04:40<12:56,  2.63s/it, v_num=1, train_loss_ste
+Epoch 105/400:  26%|▎| 105/400 [04:40<12:56,  2.63s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 105/400 [04:40<12:56,  2.63s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 106/400 [04:42<12:57,  2.65s/it, v_num=1, train_loss_ste
+Epoch 106/400:  26%|▎| 106/400 [04:42<12:57,  2.65s/it, v_num=1, train_loss_ste
+Epoch 107/400:  26%|▎| 106/400 [04:42<12:57,  2.65s/it, v_num=1, train_loss_ste
+Epoch 107/400:  27%|▎| 107/400 [04:45<13:02,  2.67s/it, v_num=1, train_loss_ste
+Epoch 107/400:  27%|▎| 107/400 [04:45<13:02,  2.67s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 107/400 [04:45<13:02,  2.67s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 108/400 [04:48<12:59,  2.67s/it, v_num=1, train_loss_ste
+Epoch 108/400:  27%|▎| 108/400 [04:48<12:59,  2.67s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 108/400 [04:48<12:59,  2.67s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 109/400 [04:50<12:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 109/400:  27%|▎| 109/400 [04:50<12:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 110/400:  27%|▎| 109/400 [04:50<12:56,  2.67s/it, v_num=1, train_loss_ste
+Epoch 110/400:  28%|▎| 110/400 [04:53<12:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 110/400:  28%|▎| 110/400 [04:53<12:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 110/400 [04:53<12:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 111/400 [04:56<12:43,  2.64s/it, v_num=1, train_loss_ste
+Epoch 111/400:  28%|▎| 111/400 [04:56<12:43,  2.64s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 111/400 [04:56<12:43,  2.64s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 112/400 [04:58<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 112/400:  28%|▎| 112/400 [04:58<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 112/400 [04:58<12:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 113/400 [05:01<12:41,  2.65s/it, v_num=1, train_loss_ste
+Epoch 113/400:  28%|▎| 113/400 [05:01<12:41,  2.65s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 113/400 [05:01<12:41,  2.65s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 114/400 [05:04<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 114/400:  28%|▎| 114/400 [05:04<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 115/400:  28%|▎| 114/400 [05:04<12:39,  2.66s/it, v_num=1, train_loss_ste
+Epoch 115/400:  29%|▎| 115/400 [05:06<12:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 115/400:  29%|▎| 115/400 [05:06<12:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 115/400 [05:06<12:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 116/400 [05:09<12:33,  2.65s/it, v_num=1, train_loss_ste
+Epoch 116/400:  29%|▎| 116/400 [05:09<12:33,  2.65s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 116/400 [05:09<12:33,  2.65s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 117/400 [05:11<12:30,  2.65s/it, v_num=1, train_loss_ste
+Epoch 117/400:  29%|▎| 117/400 [05:11<12:30,  2.65s/it, v_num=1, train_loss_ste
+Epoch 118/400:  29%|▎| 117/400 [05:11<12:30,  2.65s/it, v_num=1, train_loss_ste
+Epoch 118/400:  30%|▎| 118/400 [05:14<12:29,  2.66s/it, v_num=1, train_loss_ste
+Epoch 118/400:  30%|▎| 118/400 [05:14<12:29,  2.66s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 118/400 [05:14<12:29,  2.66s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 119/400 [05:17<12:26,  2.66s/it, v_num=1, train_loss_ste
+Epoch 119/400:  30%|▎| 119/400 [05:17<12:26,  2.66s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 119/400 [05:17<12:26,  2.66s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 120/400 [05:19<12:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 120/400:  30%|▎| 120/400 [05:19<12:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 120/400 [05:19<12:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 121/400 [05:22<12:17,  2.64s/it, v_num=1, train_loss_ste
+Epoch 121/400:  30%|▎| 121/400 [05:22<12:17,  2.64s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 121/400 [05:22<12:17,  2.64s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 122/400 [05:25<12:10,  2.63s/it, v_num=1, train_loss_ste
+Epoch 122/400:  30%|▎| 122/400 [05:25<12:10,  2.63s/it, v_num=1, train_loss_ste
+Epoch 123/400:  30%|▎| 122/400 [05:25<12:10,  2.63s/it, v_num=1, train_loss_ste
+Epoch 123/400:  31%|▎| 123/400 [05:27<12:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 123/400:  31%|▎| 123/400 [05:27<12:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 123/400 [05:27<12:09,  2.63s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 124/400 [05:30<12:08,  2.64s/it, v_num=1, train_loss_ste
+Epoch 124/400:  31%|▎| 124/400 [05:30<12:08,  2.64s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 124/400 [05:30<12:08,  2.64s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 125/400 [05:33<12:07,  2.65s/it, v_num=1, train_loss_ste
+Epoch 125/400:  31%|▎| 125/400 [05:33<12:07,  2.65s/it, v_num=1, train_loss_ste
+Epoch 126/400:  31%|▎| 125/400 [05:33<12:07,  2.65s/it, v_num=1, train_loss_ste
+Epoch 126/400:  32%|▎| 126/400 [05:35<12:04,  2.64s/it, v_num=1, train_loss_ste
+Epoch 126/400:  32%|▎| 126/400 [05:35<12:04,  2.64s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 126/400 [05:35<12:04,  2.64s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 127/400 [05:38<11:58,  2.63s/it, v_num=1, train_loss_ste
+Epoch 127/400:  32%|▎| 127/400 [05:38<11:58,  2.63s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 127/400 [05:38<11:58,  2.63s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 128/400 [05:40<11:53,  2.62s/it, v_num=1, train_loss_ste
+Epoch 128/400:  32%|▎| 128/400 [05:40<11:53,  2.62s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 128/400 [05:40<11:53,  2.62s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 129/400 [05:43<11:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 129/400:  32%|▎| 129/400 [05:43<11:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 129/400 [05:43<11:53,  2.63s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 130/400 [05:46<11:47,  2.62s/it, v_num=1, train_loss_ste
+Epoch 130/400:  32%|▎| 130/400 [05:46<11:47,  2.62s/it, v_num=1, train_loss_ste
+Epoch 131/400:  32%|▎| 130/400 [05:46<11:47,  2.62s/it, v_num=1, train_loss_ste
+Epoch 131/400:  33%|▎| 131/400 [05:48<11:43,  2.61s/it, v_num=1, train_loss_ste
+Epoch 131/400:  33%|▎| 131/400 [05:48<11:43,  2.61s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 131/400 [05:48<11:43,  2.61s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 132/400 [05:51<11:42,  2.62s/it, v_num=1, train_loss_ste
+Epoch 132/400:  33%|▎| 132/400 [05:51<11:42,  2.62s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 132/400 [05:51<11:42,  2.62s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 133/400 [05:54<11:44,  2.64s/it, v_num=1, train_loss_ste
+Epoch 133/400:  33%|▎| 133/400 [05:54<11:44,  2.64s/it, v_num=1, train_loss_ste
+Epoch 134/400:  33%|▎| 133/400 [05:54<11:44,  2.64s/it, v_num=1, train_loss_ste
+Epoch 134/400:  34%|▎| 134/400 [05:56<11:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 134/400:  34%|▎| 134/400 [05:56<11:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 134/400 [05:56<11:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 135/400 [05:59<11:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 135/400:  34%|▎| 135/400 [05:59<11:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 135/400 [05:59<11:42,  2.65s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 136/400 [06:02<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 136/400:  34%|▎| 136/400 [06:02<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 136/400 [06:02<11:43,  2.66s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 137/400 [06:04<11:41,  2.67s/it, v_num=1, train_loss_ste
+Epoch 137/400:  34%|▎| 137/400 [06:04<11:41,  2.67s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 137/400 [06:04<11:41,  2.67s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 138/400 [06:07<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 138/400:  34%|▎| 138/400 [06:07<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 139/400:  34%|▎| 138/400 [06:07<11:38,  2.66s/it, v_num=1, train_loss_ste
+Epoch 139/400:  35%|▎| 139/400 [06:10<11:31,  2.65s/it, v_num=1, train_loss_ste
+Epoch 139/400:  35%|▎| 139/400 [06:10<11:31,  2.65s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 139/400 [06:10<11:31,  2.65s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 140/400 [06:12<11:28,  2.65s/it, v_num=1, train_loss_ste
+Epoch 140/400:  35%|▎| 140/400 [06:12<11:28,  2.65s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 140/400 [06:12<11:28,  2.65s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 141/400 [06:15<11:27,  2.65s/it, v_num=1, train_loss_ste
+Epoch 141/400:  35%|▎| 141/400 [06:15<11:27,  2.65s/it, v_num=1, train_loss_ste
+Epoch 142/400:  35%|▎| 141/400 [06:15<11:27,  2.65s/it, v_num=1, train_loss_ste
+Epoch 142/400:  36%|▎| 142/400 [06:18<11:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 142/400:  36%|▎| 142/400 [06:18<11:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 142/400 [06:18<11:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 143/400 [06:20<11:24,  2.66s/it, v_num=1, train_loss_ste
+Epoch 143/400:  36%|▎| 143/400 [06:20<11:24,  2.66s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 143/400 [06:20<11:24,  2.66s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 144/400 [06:23<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 144/400:  36%|▎| 144/400 [06:23<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 144/400 [06:23<11:30,  2.70s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 145/400 [06:26<11:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 145/400:  36%|▎| 145/400 [06:26<11:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 145/400 [06:26<11:25,  2.69s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 146/400 [06:28<11:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 146/400:  36%|▎| 146/400 [06:28<11:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 147/400:  36%|▎| 146/400 [06:28<11:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 147/400:  37%|▎| 147/400 [06:31<11:20,  2.69s/it, v_num=1, train_loss_ste
+Epoch 147/400:  37%|▎| 147/400 [06:31<11:20,  2.69s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 147/400 [06:31<11:20,  2.69s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 148/400 [06:34<11:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 148/400:  37%|▎| 148/400 [06:34<11:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 148/400 [06:34<11:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 149/400 [06:36<11:17,  2.70s/it, v_num=1, train_loss_ste
+Epoch 149/400:  37%|▎| 149/400 [06:36<11:17,  2.70s/it, v_num=1, train_loss_ste
+Epoch 150/400:  37%|▎| 149/400 [06:36<11:17,  2.70s/it, v_num=1, train_loss_ste
+Epoch 150/400:  38%|▍| 150/400 [06:39<11:14,  2.70s/it, v_num=1, train_loss_ste
+Epoch 150/400:  38%|▍| 150/400 [06:39<11:14,  2.70s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 150/400 [06:39<11:14,  2.70s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 151/400 [06:42<11:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 151/400:  38%|▍| 151/400 [06:42<11:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 151/400 [06:42<11:05,  2.67s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 152/400 [06:44<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 152/400:  38%|▍| 152/400 [06:44<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 152/400 [06:44<11:04,  2.68s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 153/400 [06:47<11:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 153/400:  38%|▍| 153/400 [06:47<11:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 153/400 [06:47<11:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 154/400 [06:50<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 154/400:  38%|▍| 154/400 [06:50<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 155/400:  38%|▍| 154/400 [06:50<10:58,  2.68s/it, v_num=1, train_loss_ste
+Epoch 155/400:  39%|▍| 155/400 [06:53<10:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 155/400:  39%|▍| 155/400 [06:53<10:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 155/400 [06:53<10:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 156/400 [06:55<10:50,  2.67s/it, v_num=1, train_loss_ste
+Epoch 156/400:  39%|▍| 156/400 [06:55<10:50,  2.67s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 156/400 [06:55<10:50,  2.67s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 157/400 [06:58<10:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 157/400:  39%|▍| 157/400 [06:58<10:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 158/400:  39%|▍| 157/400 [06:58<10:42,  2.64s/it, v_num=1, train_loss_ste
+Epoch 158/400:  40%|▍| 158/400 [07:00<10:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 158/400:  40%|▍| 158/400 [07:00<10:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 158/400 [07:00<10:35,  2.63s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 159/400 [07:03<10:30,  2.62s/it, v_num=1, train_loss_ste
+Epoch 159/400:  40%|▍| 159/400 [07:03<10:30,  2.62s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 159/400 [07:03<10:30,  2.62s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 160/400 [07:06<10:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 160/400:  40%|▍| 160/400 [07:06<10:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 160/400 [07:06<10:29,  2.62s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 161/400 [07:08<10:25,  2.62s/it, v_num=1, train_loss_ste
+Epoch 161/400:  40%|▍| 161/400 [07:08<10:25,  2.62s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 161/400 [07:08<10:25,  2.62s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 162/400 [07:11<10:27,  2.64s/it, v_num=1, train_loss_ste
+Epoch 162/400:  40%|▍| 162/400 [07:11<10:27,  2.64s/it, v_num=1, train_loss_ste
+Epoch 163/400:  40%|▍| 162/400 [07:11<10:27,  2.64s/it, v_num=1, train_loss_ste
+Epoch 163/400:  41%|▍| 163/400 [07:14<10:30,  2.66s/it, v_num=1, train_loss_ste
+Epoch 163/400:  41%|▍| 163/400 [07:14<10:30,  2.66s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 163/400 [07:14<10:30,  2.66s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 164/400 [07:16<10:29,  2.67s/it, v_num=1, train_loss_ste
+Epoch 164/400:  41%|▍| 164/400 [07:16<10:29,  2.67s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 164/400 [07:16<10:29,  2.67s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 165/400 [07:19<10:28,  2.67s/it, v_num=1, train_loss_ste
+Epoch 165/400:  41%|▍| 165/400 [07:19<10:28,  2.67s/it, v_num=1, train_loss_ste
+Epoch 166/400:  41%|▍| 165/400 [07:19<10:28,  2.67s/it, v_num=1, train_loss_ste
+Epoch 166/400:  42%|▍| 166/400 [07:22<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 166/400:  42%|▍| 166/400 [07:22<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 166/400 [07:22<10:28,  2.69s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 167/400 [07:24<10:26,  2.69s/it, v_num=1, train_loss_ste
+Epoch 167/400:  42%|▍| 167/400 [07:24<10:26,  2.69s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 167/400 [07:24<10:26,  2.69s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 168/400 [07:27<10:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 168/400:  42%|▍| 168/400 [07:27<10:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 168/400 [07:27<10:21,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 169/400 [07:30<10:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 169/400:  42%|▍| 169/400 [07:30<10:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 169/400 [07:30<10:18,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 170/400 [07:32<10:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 170/400:  42%|▍| 170/400 [07:32<10:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 171/400:  42%|▍| 170/400 [07:32<10:17,  2.68s/it, v_num=1, train_loss_ste
+Epoch 171/400:  43%|▍| 171/400 [07:35<10:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 171/400:  43%|▍| 171/400 [07:35<10:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 171/400 [07:35<10:12,  2.68s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 172/400 [07:38<10:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 172/400:  43%|▍| 172/400 [07:38<10:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 172/400 [07:38<10:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 173/400 [07:40<10:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 173/400:  43%|▍| 173/400 [07:40<10:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 174/400:  43%|▍| 173/400 [07:40<10:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 174/400:  44%|▍| 174/400 [07:43<09:59,  2.65s/it, v_num=1, train_loss_ste
+Epoch 174/400:  44%|▍| 174/400 [07:43<09:59,  2.65s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 174/400 [07:43<09:59,  2.65s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 175/400 [07:46<09:52,  2.63s/it, v_num=1, train_loss_ste
+Epoch 175/400:  44%|▍| 175/400 [07:46<09:52,  2.63s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 175/400 [07:46<09:52,  2.63s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 176/400 [07:48<09:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 176/400:  44%|▍| 176/400 [07:48<09:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 176/400 [07:48<09:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 177/400 [07:51<09:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 177/400:  44%|▍| 177/400 [07:51<09:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 177/400 [07:51<09:52,  2.66s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 178/400 [07:54<09:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 178/400:  44%|▍| 178/400 [07:54<09:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 179/400:  44%|▍| 178/400 [07:54<09:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 179/400:  45%|▍| 179/400 [07:56<09:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 179/400:  45%|▍| 179/400 [07:56<09:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 179/400 [07:56<09:45,  2.65s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 180/400 [07:59<09:44,  2.66s/it, v_num=1, train_loss_ste
+Epoch 180/400:  45%|▍| 180/400 [07:59<09:44,  2.66s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 180/400 [07:59<09:44,  2.66s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 181/400 [08:02<09:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 181/400:  45%|▍| 181/400 [08:02<09:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 182/400:  45%|▍| 181/400 [08:02<09:42,  2.66s/it, v_num=1, train_loss_ste
+Epoch 182/400:  46%|▍| 182/400 [08:04<09:40,  2.66s/it, v_num=1, train_loss_ste
+Epoch 182/400:  46%|▍| 182/400 [08:04<09:40,  2.66s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 182/400 [08:04<09:40,  2.66s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 183/400 [08:07<09:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 183/400:  46%|▍| 183/400 [08:07<09:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 183/400 [08:07<09:35,  2.65s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 184/400 [08:10<09:37,  2.67s/it, v_num=1, train_loss_ste
+Epoch 184/400:  46%|▍| 184/400 [08:10<09:37,  2.67s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 184/400 [08:10<09:37,  2.67s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 185/400 [08:12<09:33,  2.67s/it, v_num=1, train_loss_ste
+Epoch 185/400:  46%|▍| 185/400 [08:12<09:33,  2.67s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 185/400 [08:12<09:33,  2.67s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 186/400 [08:15<09:31,  2.67s/it, v_num=1, train_loss_ste
+Epoch 186/400:  46%|▍| 186/400 [08:15<09:31,  2.67s/it, v_num=1, train_loss_ste
+Epoch 187/400:  46%|▍| 186/400 [08:15<09:31,  2.67s/it, v_num=1, train_loss_ste
+Epoch 187/400:  47%|▍| 187/400 [08:18<09:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 187/400:  47%|▍| 187/400 [08:18<09:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 187/400 [08:18<09:27,  2.67s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 188/400 [08:20<09:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 188/400:  47%|▍| 188/400 [08:20<09:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 188/400 [08:20<09:23,  2.66s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 189/400 [08:23<09:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 189/400:  47%|▍| 189/400 [08:23<09:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 190/400:  47%|▍| 189/400 [08:23<09:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 190/400:  48%|▍| 190/400 [08:26<09:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 190/400:  48%|▍| 190/400 [08:26<09:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 190/400 [08:26<09:22,  2.68s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 191/400 [08:28<09:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 191/400:  48%|▍| 191/400 [08:28<09:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 191/400 [08:28<09:19,  2.67s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 192/400 [08:31<09:14,  2.67s/it, v_num=1, train_loss_ste
+Epoch 192/400:  48%|▍| 192/400 [08:31<09:14,  2.67s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 192/400 [08:31<09:14,  2.67s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 193/400 [08:34<09:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 193/400:  48%|▍| 193/400 [08:34<09:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 193/400 [08:34<09:09,  2.66s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 194/400 [08:36<09:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 194/400:  48%|▍| 194/400 [08:36<09:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 195/400:  48%|▍| 194/400 [08:36<09:06,  2.65s/it, v_num=1, train_loss_ste
+Epoch 195/400:  49%|▍| 195/400 [08:39<09:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 195/400:  49%|▍| 195/400 [08:39<09:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 195/400 [08:39<09:02,  2.65s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 196/400 [08:41<08:58,  2.64s/it, v_num=1, train_loss_ste
+Epoch 196/400:  49%|▍| 196/400 [08:41<08:58,  2.64s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 196/400 [08:41<08:58,  2.64s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 197/400 [08:44<08:55,  2.64s/it, v_num=1, train_loss_ste
+Epoch 197/400:  49%|▍| 197/400 [08:44<08:55,  2.64s/it, v_num=1, train_loss_ste
+Epoch 198/400:  49%|▍| 197/400 [08:44<08:55,  2.64s/it, v_num=1, train_loss_ste
+Epoch 198/400:  50%|▍| 198/400 [08:47<08:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 198/400:  50%|▍| 198/400 [08:47<08:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 198/400 [08:47<08:52,  2.64s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 199/400 [08:49<08:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 199/400:  50%|▍| 199/400 [08:49<08:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▍| 199/400 [08:49<08:51,  2.65s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▌| 200/400 [08:52<08:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 200/400:  50%|▌| 200/400 [08:52<08:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 200/400 [08:52<08:49,  2.65s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 201/400 [08:55<08:46,  2.64s/it, v_num=1, train_loss_ste
+Epoch 201/400:  50%|▌| 201/400 [08:55<08:46,  2.64s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 201/400 [08:55<08:46,  2.64s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 202/400 [08:57<08:47,  2.66s/it, v_num=1, train_loss_ste
+Epoch 202/400:  50%|▌| 202/400 [08:57<08:47,  2.66s/it, v_num=1, train_loss_ste
+Epoch 203/400:  50%|▌| 202/400 [08:57<08:47,  2.66s/it, v_num=1, train_loss_ste
+Epoch 203/400:  51%|▌| 203/400 [09:00<08:46,  2.67s/it, v_num=1, train_loss_ste
+Epoch 203/400:  51%|▌| 203/400 [09:00<08:46,  2.67s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 203/400 [09:00<08:46,  2.67s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 204/400 [09:03<08:46,  2.69s/it, v_num=1, train_loss_ste
+Epoch 204/400:  51%|▌| 204/400 [09:03<08:46,  2.69s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 204/400 [09:03<08:46,  2.69s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 205/400 [09:05<08:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 205/400:  51%|▌| 205/400 [09:05<08:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 206/400:  51%|▌| 205/400 [09:05<08:45,  2.69s/it, v_num=1, train_loss_ste
+Epoch 206/400:  52%|▌| 206/400 [09:08<08:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 206/400:  52%|▌| 206/400 [09:08<08:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 206/400 [09:08<08:41,  2.69s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 207/400 [09:11<08:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 207/400:  52%|▌| 207/400 [09:11<08:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 207/400 [09:11<08:33,  2.66s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 208/400 [09:13<08:26,  2.64s/it, v_num=1, train_loss_ste
+Epoch 208/400:  52%|▌| 208/400 [09:13<08:26,  2.64s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 208/400 [09:13<08:26,  2.64s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 209/400 [09:16<08:25,  2.65s/it, v_num=1, train_loss_ste
+Epoch 209/400:  52%|▌| 209/400 [09:16<08:25,  2.65s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 209/400 [09:16<08:25,  2.65s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 210/400 [09:19<08:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 210/400:  52%|▌| 210/400 [09:19<08:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 211/400:  52%|▌| 210/400 [09:19<08:25,  2.66s/it, v_num=1, train_loss_ste
+Epoch 211/400:  53%|▌| 211/400 [09:21<08:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 211/400:  53%|▌| 211/400 [09:21<08:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 211/400 [09:21<08:23,  2.67s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 212/400 [09:24<08:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 212/400:  53%|▌| 212/400 [09:24<08:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 212/400 [09:24<08:20,  2.66s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 213/400 [09:27<08:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 213/400:  53%|▌| 213/400 [09:27<08:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 214/400:  53%|▌| 213/400 [09:27<08:22,  2.69s/it, v_num=1, train_loss_ste
+Epoch 214/400:  54%|▌| 214/400 [09:29<08:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 214/400:  54%|▌| 214/400 [09:29<08:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 214/400 [09:29<08:21,  2.70s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 215/400 [09:32<08:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 215/400:  54%|▌| 215/400 [09:32<08:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 215/400 [09:32<08:17,  2.69s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 216/400 [09:35<08:13,  2.68s/it, v_num=1, train_loss_ste
+Epoch 216/400:  54%|▌| 216/400 [09:35<08:13,  2.68s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 216/400 [09:35<08:13,  2.68s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 217/400 [09:38<08:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 217/400:  54%|▌| 217/400 [09:38<08:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 218/400:  54%|▌| 217/400 [09:38<08:12,  2.69s/it, v_num=1, train_loss_ste
+Epoch 218/400:  55%|▌| 218/400 [09:40<08:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 218/400:  55%|▌| 218/400 [09:40<08:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 218/400 [09:40<08:10,  2.70s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 219/400 [09:43<08:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 219/400:  55%|▌| 219/400 [09:43<08:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 219/400 [09:43<08:03,  2.67s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 220/400 [09:46<08:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 220/400:  55%|▌| 220/400 [09:46<08:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 220/400 [09:46<08:02,  2.68s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 221/400 [09:48<07:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 221/400:  55%|▌| 221/400 [09:48<07:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 222/400:  55%|▌| 221/400 [09:48<07:59,  2.68s/it, v_num=1, train_loss_ste
+Epoch 222/400:  56%|▌| 222/400 [09:51<07:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 222/400:  56%|▌| 222/400 [09:51<07:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 222/400 [09:51<07:56,  2.68s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 223/400 [09:54<07:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 223/400:  56%|▌| 223/400 [09:54<07:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 223/400 [09:54<07:51,  2.66s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 224/400 [09:56<07:48,  2.66s/it, v_num=1, train_loss_ste
+Epoch 224/400:  56%|▌| 224/400 [09:56<07:48,  2.66s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 224/400 [09:56<07:48,  2.66s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 225/400 [09:59<07:41,  2.64s/it, v_num=1, train_loss_ste
+Epoch 225/400:  56%|▌| 225/400 [09:59<07:41,  2.64s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 225/400 [09:59<07:41,  2.64s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 226/400 [10:01<07:36,  2.63s/it, v_num=1, train_loss_ste
+Epoch 226/400:  56%|▌| 226/400 [10:01<07:36,  2.63s/it, v_num=1, train_loss_ste
+Epoch 227/400:  56%|▌| 226/400 [10:01<07:36,  2.63s/it, v_num=1, train_loss_ste
+Epoch 227/400:  57%|▌| 227/400 [10:04<07:32,  2.62s/it, v_num=1, train_loss_ste
+Epoch 227/400:  57%|▌| 227/400 [10:04<07:32,  2.62s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 227/400 [10:04<07:32,  2.62s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 228/400 [10:07<07:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 228/400:  57%|▌| 228/400 [10:07<07:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 228/400 [10:07<07:32,  2.63s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 229/400 [10:09<07:29,  2.63s/it, v_num=1, train_loss_ste
+Epoch 229/400:  57%|▌| 229/400 [10:09<07:29,  2.63s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 229/400 [10:09<07:29,  2.63s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 230/400 [10:12<07:24,  2.62s/it, v_num=1, train_loss_ste
+Epoch 230/400:  57%|▌| 230/400 [10:12<07:24,  2.62s/it, v_num=1, train_loss_ste
+Epoch 231/400:  57%|▌| 230/400 [10:12<07:24,  2.62s/it, v_num=1, train_loss_ste
+Epoch 231/400:  58%|▌| 231/400 [10:14<07:20,  2.61s/it, v_num=1, train_loss_ste
+Epoch 231/400:  58%|▌| 231/400 [10:14<07:20,  2.61s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 231/400 [10:14<07:20,  2.61s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 232/400 [10:17<07:20,  2.62s/it, v_num=1, train_loss_ste
+Epoch 232/400:  58%|▌| 232/400 [10:17<07:20,  2.62s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 232/400 [10:17<07:20,  2.62s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 233/400 [10:20<07:19,  2.63s/it, v_num=1, train_loss_ste
+Epoch 233/400:  58%|▌| 233/400 [10:20<07:19,  2.63s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 233/400 [10:20<07:19,  2.63s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 234/400 [10:22<07:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 234/400:  58%|▌| 234/400 [10:22<07:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 235/400:  58%|▌| 234/400 [10:22<07:20,  2.65s/it, v_num=1, train_loss_ste
+Epoch 235/400:  59%|▌| 235/400 [10:25<07:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 235/400:  59%|▌| 235/400 [10:25<07:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 235/400 [10:25<07:17,  2.65s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 236/400 [10:28<07:15,  2.66s/it, v_num=1, train_loss_ste
+Epoch 236/400:  59%|▌| 236/400 [10:28<07:15,  2.66s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 236/400 [10:28<07:15,  2.66s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 237/400 [10:30<07:14,  2.66s/it, v_num=1, train_loss_ste
+Epoch 237/400:  59%|▌| 237/400 [10:30<07:14,  2.66s/it, v_num=1, train_loss_ste
+Epoch 238/400:  59%|▌| 237/400 [10:30<07:14,  2.66s/it, v_num=1, train_loss_ste
+Epoch 238/400:  60%|▌| 238/400 [10:33<07:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 238/400:  60%|▌| 238/400 [10:33<07:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 238/400 [10:33<07:13,  2.67s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 239/400 [10:36<07:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 239/400:  60%|▌| 239/400 [10:36<07:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 239/400 [10:36<07:11,  2.68s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 240/400 [10:39<07:13,  2.71s/it, v_num=1, train_loss_ste
+Epoch 240/400:  60%|▌| 240/400 [10:39<07:13,  2.71s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 240/400 [10:39<07:13,  2.71s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 241/400 [10:41<07:14,  2.73s/it, v_num=1, train_loss_ste
+Epoch 241/400:  60%|▌| 241/400 [10:41<07:14,  2.73s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 241/400 [10:41<07:14,  2.73s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 242/400 [10:44<07:15,  2.75s/it, v_num=1, train_loss_ste
+Epoch 242/400:  60%|▌| 242/400 [10:44<07:15,  2.75s/it, v_num=1, train_loss_ste
+Epoch 243/400:  60%|▌| 242/400 [10:44<07:15,  2.75s/it, v_num=1, train_loss_ste
+Epoch 243/400:  61%|▌| 243/400 [10:47<07:05,  2.71s/it, v_num=1, train_loss_ste
+Epoch 243/400:  61%|▌| 243/400 [10:47<07:05,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 243/400 [10:47<07:05,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 244/400 [10:50<07:03,  2.71s/it, v_num=1, train_loss_ste
+Epoch 244/400:  61%|▌| 244/400 [10:50<07:03,  2.71s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 244/400 [10:50<07:03,  2.71s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 245/400 [10:52<07:05,  2.75s/it, v_num=1, train_loss_ste
+Epoch 245/400:  61%|▌| 245/400 [10:52<07:05,  2.75s/it, v_num=1, train_loss_ste
+Epoch 246/400:  61%|▌| 245/400 [10:52<07:05,  2.75s/it, v_num=1, train_loss_ste
+Epoch 246/400:  62%|▌| 246/400 [10:55<07:05,  2.76s/it, v_num=1, train_loss_ste
+Epoch 246/400:  62%|▌| 246/400 [10:55<07:05,  2.76s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 246/400 [10:55<07:05,  2.76s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 247/400 [10:58<07:03,  2.77s/it, v_num=1, train_loss_ste
+Epoch 247/400:  62%|▌| 247/400 [10:58<07:03,  2.77s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 247/400 [10:58<07:03,  2.77s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 248/400 [11:01<07:00,  2.77s/it, v_num=1, train_loss_ste
+Epoch 248/400:  62%|▌| 248/400 [11:01<07:00,  2.77s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 248/400 [11:01<07:00,  2.77s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 249/400 [11:03<06:58,  2.77s/it, v_num=1, train_loss_ste
+Epoch 249/400:  62%|▌| 249/400 [11:03<06:58,  2.77s/it, v_num=1, train_loss_ste
+Epoch 250/400:  62%|▌| 249/400 [11:03<06:58,  2.77s/it, v_num=1, train_loss_ste[rank: 0] Received SIGTERM: 15
+
+Epoch 250/400:  62%|▌| 249/400 [11:06<06:44,  2.68s/it, v_num=1, train_loss_ste

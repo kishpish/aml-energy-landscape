@@ -1,0 +1,82 @@
+{
+  "n_cells": 38193,
+  "n_genes": 19441,
+  "n_patients": 21,
+  "n_samples": 41,
+  "obsm_keys": [
+    "X_scVI",
+    "X_scVI_d30",
+    "X_umap",
+    "score_aucell"
+  ],
+  "obs_columns_n": 95,
+  "obs_present_required": [
+    "sample_id",
+    "patient_id",
+    "timepoint",
+    "treatment_status",
+    "disease_state",
+    "n_genes_by_counts",
+    "total_counts",
+    "pct_counts_mt",
+    "pct_counts_ribo",
+    "S_score",
+    "G2M_score",
+    "phase",
+    "celltypist_label",
+    "celltypist_majority",
+    "cnv_score",
+    "cnv_proxy_call",
+    "primary_malignant_call",
+    "D_local_trace",
+    "D_local_anisotropy",
+    "LSC17_score",
+    "LSC6_score",
+    "LSC_surface_score"
+  ],
+  "obs_missing_required": [],
+  "obs_present_optional": [
+    "Author Cell Type"
+  ],
+  "obsm_present": [
+    "X_scVI",
+    "X_scVI_d30",
+    "X_umap"
+  ],
+  "obsm_missing": [
+    "X_scVI_d20",
+    "X_scVI_d40"
+  ],
+  "leiden_n_clusters": 18,
+  "disease_state": {
+    "AML_diagnosis": 15582,
+    "AML_residual_or_relapse": 14946,
+    "healthy_donor": 7665
+  },
+  "primary_malignant_call": {
+    "normal": 22871,
+    "malignant": 13438,
+    "normal-like": 1744,
+    "putative_malignant": 140
+  },
+  "cell_cycle_phase": {
+    "G1": 23740,
+    "G2M": 10089,
+    "S": 4364
+  },
+  "patients_with_longitudinal_samples": [
+    "AML314",
+    "AML328",
+    "AML329",
+    "AML371",
+    "AML420B",
+    "AML475",
+    "AML556",
+    "AML707B",
+    "AML722B",
+    "AML870",
+    "AML997",
+    "BM5"
+  ],
+  "n_total_obs_columns": 95
+}

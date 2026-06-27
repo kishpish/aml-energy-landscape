@@ -1,0 +1,19 @@
+{
+  "n_tcga_patients_scored": 151,
+  "n_states_survival_tested": 46,
+  "univariate_logrank_q_lt_0.05": 0,
+  "univariate_nominal_p_lt_0.05": 2,
+  "multivariate_cox_q_lt_0.05": 0,
+  "multivariate_independent_CI": 2,
+  "nominal_adverse_states": [
+    "A1_L1_8",
+    "A3_L1_8"
+  ],
+  "max_delta_C_index": 0.0186,
+  "diagnostic_panel_size": 25,
+  "diagnostic_cv_auc": 0.9535,
+  "prognostic_panel_size": 10,
+  "prognostic_panel_cindex": 0.775,
+  "LSC17_cindex": 0.588,
+  "prognostic_beats_LSC17": true
+}

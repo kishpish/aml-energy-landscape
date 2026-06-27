@@ -1,0 +1,15 @@
+{
+  "A_marker_concordance_mean_top10_overlap": 9.57,
+  "A_frac_states_overlap_ge8": 0.978,
+  "B_basin_agreement_phase3_vs_phase5": 1.0,
+  "C_all_lsc_subtypes_real_only": true,
+  "D_n_states_with_synthetic": 4,
+  "D_n_states_total": 79,
+  "D_states_with_synthetic": [
+    "A1_basin_edge_0",
+    "A1_basin_edge_3",
+    "A1_basin_edge_4",
+    "A1_basin_edge_1"
+  ],
+  "verdict": "Headline findings are robust to synthetic cells: markers agree 9.6/10 real-vs-augmented; basin labels agree 100% between Phase 3 (no synth) and Phase 5; all LSC subtypes are 100% real cells; only 4/79 states contain ANY synthetic cells (the deliberately-augmented rare states)."
+}

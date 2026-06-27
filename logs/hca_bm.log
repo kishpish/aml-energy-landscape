@@ -1,0 +1,29 @@
+The "stable" release is currently 2025-11-08. Specify 'census_version="2025-11-08"' in future calls to open_soma() to ensure data consistency.
+./scripts/download_hca_bm.py:14: FutureWarning: The argument `column_names` is deprecated and will be removed in a future release. Please use `obs_column_names` and `var_column_names` instead.
+  adata = cellxgene_census.get_anndata(
+./.local/lib/python3.10/site-packages/anndata/_core/aligned_df.py:68: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+./.local/lib/python3.10/site-packages/anndata/_core/aligned_df.py:68: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+[hca_bm] opening Census release='stable'
+[hca_bm] querying bone marrow / normal / Homo sapiens ...
+[hca_bm] downloaded AnnData: AnnData object with n_obs × n_vars = 759562 × 61497
+    obs: 'soma_joinid', 'dataset_id', 'assay', 'cell_type', 'donor_id', 'sex', 'development_stage', 'tissue', 'suspension_type', 'is_primary_data', 'tissue_general', 'disease'
+    var: 'soma_joinid', 'feature_id', 'feature_name', 'feature_type', 'feature_length', 'nnz', 'n_measured_obs'
+[hca_bm] writing ./data/raw/hca_bm/hca_bone_marrow.h5ad
+[hca_bm] done.
+ recent call last):
+  File "./scripts/download_hca_bm.py", line 33, in <module>
+    adata.write_h5ad(OUT, compression="gzip")
+  File "./.local/lib/python3.10/site-packages/anndata/_core/anndata.py", line 1871, in write_h5ad
+    write_h5ad(
+  File "./.local/lib/python3.10/site-packages/anndata/_io/h5ad.py", line 79, in write_h5ad
+    with h5py.File(filepath, mode) as f:
+  File "./.local/lib/python3.10/site-packages/h5py/_hl/files.py", line 555, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "./.local/lib/python3.10/site-packages/h5py/_hl/files.py", line 238, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 126, in h5py.h5f.create
+BlockingIOError: [Errno 11] Unable to synchronously create file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')

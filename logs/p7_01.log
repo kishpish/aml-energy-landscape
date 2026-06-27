@@ -1,0 +1,38 @@
+[p7_01] 40 state signatures
+[p7_01] loading scAtlas (backed)…
+[p7_01] union markers: 412, present in atlas: 361
+[p7_01] extracting marker columns from atlas…
+[p7_01] atlas marker matrix: (748679, 361)
+[p7_01] computing per-cell ranks…
+[p7_01] 20/40 states reproduce (top atlas CT matches expected)
+       state_id vangalen_type expected_atlas_ct top_scoring_atlas_ct  reproduces  enrichment_p
+A1_basin_edge_0     Prog-like              HSPC            Erythroid       False           0.0
+        A0_L1_2     Mono-like        CD14+ Mono           CD16+ Mono       False           0.0
+        A1_L1_1             T                 T                    T        True           0.0
+        A1_L1_0     Prog-like              HSPC                 HSPC        True           0.0
+        A1_L1_5            NK                 T                   NK       False           0.0
+        A0_L1_6       ProMono           ProMono              ProMono        True           0.0
+        A1_L1_4     Prog-like              HSPC                 ProB       False           0.0
+        A1_L1_3     Prog-like              HSPC                 HSPC        True           0.0
+       A0_L1_11        Plasma            Plasma               Plasma        True           0.0
+       A1_L1_10             T                 T                    T        True           0.0
+        A0_L1_8      cDC-like               cDC                  cDC        True           0.0
+        A1_L1_7      earlyEry         Erythroid            Erythroid        True           0.0
+        A1_L1_9      GMP-like               GMP                  CMP       False           0.0
+        A3_L1_1             T                 T                    T        True           0.0
+       A1_L1_12      earlyEry         Erythroid                  MEP       False           0.0
+        A3_L1_0     Prog-like              HSPC                 HSPC        True           0.0
+        A2_L1_0     Prog-like              HSPC                 HSPC        True           0.0
+        A3_L1_5            NK                 T                   NK       False           0.0
+        A1_L1_8      cDC-like               cDC                  pDC       False           0.0
+        A2_L1_3     Prog-like              HSPC                  CMP       False           0.0
+        A3_L1_7       lateEry         Erythroid            Erythroid        True           0.0
+       A1_L1_14             B                 B                    B        True           0.0
+       A1_L1_13       lateEry         Erythroid            Erythroid        True           0.0
+       A1_L1_16             T                 T                 ProB       False           0.0
+        A2_L1_4     Prog-like              HSPC                 ProB       False           0.0
+       A1_L1_15     Prog-like              HSPC                 ProB       False           0.0
+        A3_L1_4     Prog-like              HSPC                 ProB       False           0.0
+        A3_L1_3      HSC-like              HSPC                 HSPC        True           0.0
+        A1_L1_6      GMP-like               GMP              ProMono       False           0.0
+       A3_L1_10             T                 T                    T        True           0.0
